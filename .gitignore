@@ -1,0 +1,18 @@
+## Generic files
+.vscode/
+**/.DS_Store
+
+## R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+## Python 
+**/.ipynb_checkpoints/*
+
+## Lesson folders 
+## (commonly created while teaching,
+## so not appropriate to track)
+data/*
+figures/*
