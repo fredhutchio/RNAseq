@@ -13,9 +13,10 @@ Information about RNAseq is available on the [Fred Hutch Biomedical Data Science
 
 ## RNAseq: Concepts
 
-This four-class course introduces bulk RNAseq analysis for biomedical research.
-This course assumes a general understanding of the central dogma of molecular biology (DNA->RNA->protein),
-and is aimed primarily at research scientists (lab, clinical, computational).
+This four-class course introduces bulk RNAseq analysis for biomedical research,
+and is designed for research scientists (lab, clinical, computational) who have no prior experience working with genomic data.
+This course requires participants have a general understanding of the central dogma of molecular biology (DNA->RNA->protein),
+but assumes no experience handling genomic data or performing computational analyses.
 This course, or equivalent background knowledge, 
 is a pre- or co-requisite for the skills course described below.
 
@@ -25,6 +26,7 @@ you should be able to:
 - Design statistically robust RNAseq experiments
 - Choose appropriate analytical approaches for RNAseq data
 - Interpret common visualizations and hypothesis tests associated with RNAseq
+- Connect data types, experimental design, and analysis methods to appropriately frame research questions and understand technical limitations of RNAseq analyses.
 
 Please see each set of class materials for specific learning objectives. 
 
@@ -40,8 +42,10 @@ The HackMD (interactive page used for sharing links and information) for instruc
 
 By the end of this class, you should be able to:
 - RNAseq workflow
-- experimental design (replicates, read length, SE vs PE)
-- data types (mRNA stranded, mRNA non-stranded, rRNA depleted)
+- experimental design
+  - replicates, read length, SE vs PE
+  - balancing statistical power: number of samples vs sequencing depth; more samples better than deeper sequencing
+- data types (mRNA stranded, mRNA non-stranded, rRNA depleted) and technical limitations of each
 - quality assessment of data
 
 2. Read mapping and quantification
@@ -49,6 +53,7 @@ By the end of this class, you should be able to:
 By the end of this class, you should be able to:
 - read mapping (tools and assessing quality)
 - assemblies and annotations (human and mouse)
+- gene level vs transcript level
 - quantifying gene expression (htseq-count, cufflinks, RSEM)
 
 3. Hypothesis and visualization
@@ -66,17 +71,19 @@ By the end of this class, you should be able to:
 
 ## RNAseq: Skills
 
-This four-class course introduces bulk RNAseq analysis for biomedical research.
-This course assumes a general understanding of the central dogma of molecular biology (DNA->RNA->protein),
-and is aimed primarily at research scientists (lab, clinical, computational).
+This four-class course introduces software and analysis methods asociated with bulk RNAseq analysis for biomedical research.
+These genomics-focused materials are designed for research scientists with minimal prior coding experience who are interested in learning to perform their own analyses,
+as well as computationally proficient staff who are interested in learning best practices for working with research software.
 The concepts course listed above (or equivalent knowledge) is a pre- or co-requisite for this course.
-Additional pre-requisites include (Intro R, FIXME: Intro Unix? HPC: On-prem?)
+As this class focuses on applying reproducible computational methods (e.g., computer coding) to interrogate bioinformatics data,
+additional pre-requisites include Introduction to R (or equivalent knowledge). FIXME: basic familiarity with Unix command line (or one-hour crash course), include things this class doesn't include (developing workflows, Galaxy)
 
 By the end of this course,
 you should be able to:
 - Manage data and organize projects associated with RNAseq experiments
+- Recognize and interpret common file formats for genomic data, as well as software appropriate for interacting with such data
 - Validate and assess quality of RNAseq data before, during, and after analysis
-- Quantify RNAseq data (specify read mapping?)
+- Quantify RNAseq data at the gene level
 - Create visualizations and test hypotheses
 
 Please see each set of class materials for specific learning objectives. 
@@ -93,29 +100,36 @@ The HackMD (interactive page used for sharing links and information) for instruc
 
 1. Introduction
 By the end of this class, you should be able to:
-- Organize files (data, code, results) associated with genomics projects
+- Organize files (data, code, results) associated with genomics projects (idiosyncratic things about Hutch infrastructure, including accessing Unix-stored data from Mac vs Windows)
 - reproducibility
 - QC of data
 - data trimming and filtering
 
-2. Read mapping and quantification
+1. Read mapping and quantification
 By the end of this class, you should be able to:
 - mapping tools
+- gene vs transcript
+- pseudomapping
 - IGV
 
 3. Hypothesis testing
 By the end of this class, you should be able to:
+- Bioconductor 
+- EdgeR, limma voom, DESeq
 
-4. Visualization
+1. Visualization
 By the end of this class, you should be able to:
-
+- Create and customize
+- MA-plot, volcano plot, heat map
 
 Each class in this course includes code-along tutorials interspersed with challenge exercises.
 
 *Required software:**
 
 Software used in this course include:
-- IGV
+- Unix shell (to access cluster)
+- Text editor?
+- IGV?
 
 The links above reference relevant sections of [fredhutch.io's Software page](http://www.fredhutch.io/software/).
 
