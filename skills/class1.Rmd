@@ -1,0 +1,29 @@
+---
+title: 'Bulk RNAseq analysis, Class 1: Introduction to RNAseq data'
+output: github_document
+---
+
+<!--class1.md is generated from class1.Rmd. Please edit that file -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Objectives
+
+Welcome to XXX from fredhutch.io!
+This course introduces you XXX:
+XXX. 
+
+For more information about RNAseq and XXX, 
+please see the [software](https://sciwiki.fredhutch.org/XXX) 
+entry for the Fred Hutch Biomedical Data Science Wiki.
+
+Before proceeding with these training materials,
+please ensure you have installed XXX as described [here](http://www.fredhutch.io/software/).
+
+By the end of this class, you should be able to:
+- Organize files (data, code, results) associated with genomics projects (idiosyncratic things about Hutch infrastructure, including accessing Unix-stored data from Mac vs Windows)
+- reproducibility
+- QC of data
+- data trimming and filtering

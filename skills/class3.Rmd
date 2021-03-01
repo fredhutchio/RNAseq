@@ -1,0 +1,16 @@
+---
+title: 'Bulk RNAseq analysis, Class 3: Hypothesis testing'
+output: github_document
+---
+
+<!--class3.md is generated from class3.Rmd. Please edit that file -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Objectives
+
+By the end of this class, you should be able to:
+- Bioconductor 
+- EdgeR, limma voom, DESeq

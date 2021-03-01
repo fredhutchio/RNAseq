@@ -38,36 +38,13 @@ When taught by an instructor,
 each of the four classes is scheduled for one hour.
 The HackMD (interactive page used for sharing links and information) for instructor-led courses is [here](FIXME).
 
-1. Introduction
-
-By the end of this class, you should be able to:
-- RNAseq workflow
-- experimental design
-  - replicates, read length, SE vs PE
-  - balancing statistical power: number of samples vs sequencing depth; more samples better than deeper sequencing
-- data types (mRNA stranded, mRNA non-stranded, rRNA depleted) and technical limitations of each
-- quality assessment of data
+1. Introduction to RNAseq data and experimental design
 
 2. Read mapping and quantification
 
-By the end of this class, you should be able to:
-- read mapping (tools and assessing quality)
-- assemblies and annotations (human and mouse)
-- gene level vs transcript level
-- quantifying gene expression (htseq-count, cufflinks, RSEM)
-
 3. Hypothesis and visualization
 
-By the end of this class, you should be able to:
-- Analysis tools: EdgeR, limma voom, DESeq
-- visualizing results (MA-plot, volcano plot, heat map)
-
 4. Contextualizing results, and mods to RNAseq
-
-By the end of this class, you should be able to:
-- GSEA, GOseq, GOrillia, etc
-- isoforms & alternative splicing, lincRNAs, SNVs & RNA editing, multiple species (xenografts, viral, etc) 
-- other types of RNA-seq: single-cell (sc) RNA-seq, small RNA-seq, Ribo-seq, nascent RNA-seq
 
 ## RNAseq: Skills
 
@@ -98,7 +75,7 @@ When taught by an instructor,
 each of the four classes is scheduled for two hours.
 The HackMD (interactive page used for sharing links and information) for instructor-led courses is [here](FIXME).
 
-1. Introduction
+1. Introduction to RNAseq data
 By the end of this class, you should be able to:
 - Organize files (data, code, results) associated with genomics projects (idiosyncratic things about Hutch infrastructure, including accessing Unix-stored data from Mac vs Windows)
 - reproducibility
