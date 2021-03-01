@@ -39,11 +39,8 @@ each of the four classes is scheduled for one hour.
 The HackMD (interactive page used for sharing links and information) for instructor-led courses is [here](FIXME).
 
 1. Introduction to RNAseq data and experimental design
-
 2. Read mapping and quantification
-
 3. Hypothesis and visualization
-
 4. Contextualizing results, and mods to RNAseq
 
 ## RNAseq: Skills
@@ -76,39 +73,11 @@ each of the four classes is scheduled for two hours.
 The HackMD (interactive page used for sharing links and information) for instructor-led courses is [here](FIXME).
 
 1. Introduction to RNAseq data
-By the end of this class, you should be able to:
-- Organize files (data, code, results) associated with genomics projects (idiosyncratic things about Hutch infrastructure, including accessing Unix-stored data from Mac vs Windows)
-- reproducibility
-- QC of data
-- data trimming and filtering
-
-1. Read mapping and quantification
-By the end of this class, you should be able to:
-- mapping tools
-- gene vs transcript
-- pseudomapping
-- IGV
-
+2. Read mapping and quantification
 3. Hypothesis testing
-By the end of this class, you should be able to:
-- Bioconductor 
-- EdgeR, limma voom, DESeq
-
-1. Visualization
-By the end of this class, you should be able to:
-- Create and customize
-- MA-plot, volcano plot, heat map
+4. Visualization
 
 Each class in this course includes code-along tutorials interspersed with challenge exercises.
-
-*Required software:**
-
-Software used in this course include:
-- Unix shell (to access cluster)
-- Text editor?
-- IGV?
-
-The links above reference relevant sections of [fredhutch.io's Software page](http://www.fredhutch.io/software/).
 
 ## For curriculum contributors and instructors
 
