@@ -51,7 +51,7 @@ Lecture materials from the UW Tools For Computational Biology course. Covers Bio
 A series of shell and R scripts used to process RNA sequencing data
 
 ### Scope
-* GitHub repo
+* GitHub repo with scripts and README
 * Minimal guidance
 
 ### Outline
@@ -73,19 +73,55 @@ A series of shell and R scripts used to process RNA sequencing data
 
 ## [Alex’s Lemonade Stand RNAseq materials](https://github.com/AlexsLemonade/RNA-Seq-Exercises)
 
+A single module in a series from [The Alex's Lemonade Stand Foundation Childhood Cancer Data Lab](https://www.ccdatalab.org/)
+
 ### Scope
+* According to the [schedule](https://github.com/AlexsLemonade/RNA-Seq-Exercises/blob/master/schedule.md) modules take two days
+* Lots of good information in this organization's repos related to R and RNA seq but it's not well documented where things live + broken links make the repos difficult to navigate.
 
 ### Outline
+1. Installing and setting up a Docker container
+2. Accessing data on flash drives
+3. Intro to R and intermediate R (Tidyverse)
+4. QC, trim, and quantification using Salmon
+5. Gene level summary using tximport
+6. RNA-seq EDA
+7. Differential gene expression analysis
+8. Normalizing count matrix
+9. Single cell - processing 10x raw data
+10. Single cell - dimensionality reduction
+11. Machine learning - data prep, cclustering, PLIER
 
 ### Software
+* Bulk RNA Seq
+  * FastQC
+  * fastp
+  * Salmon
+  * tximport
+  * DESeq2
 
 ## [Cornell RNAseq course](https://chagall.med.cornell.edu/RNASEQcourse/)
 
+RNA Seq analysis workshop course materials.
+
 ### Scope
+* According to website the workshop took 4 days
+* Includes slides, sample agignment files/read counts/outputs, extensive course notes
 
 ### Outline
+1. Set up on the command line - create directory structure, download fastq
+2. QC raw reads w FastQC
+3. Alignment with STAR
+4. Interacting with BAM/SAM files using samtools
+5. Visual inspection with IGV
+6. Read in feature counts to R
+7. Use DESeq2 to normalize read counts for differences in seq depth and transform reads to the log2 scale.
+8. Differential gene analysis with DESeq2
+9. GO term enrichment
 
 ### Software
+* DESeq2
+* ClusterProfiler
 
 ## [Griffith Lab RNAseq course](https://rnabio.org/)
 
