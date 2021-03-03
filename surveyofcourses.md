@@ -125,9 +125,31 @@ RNA Seq analysis workshop course materials.
 
 ## [Griffith Lab RNAseq course](https://rnabio.org/)
 
+An in depth course covering all aspects of RNA-seq analysis.
+
 ### Scope
+* A course made up of multiple modules
+* According to the schedule takes 5 days
 
 ### Outline
+1. Course set up (aws, unix, tool installation)
+2. Intro to RNA seq theory
+3. General goals/themes in RNA seq analysis workflow
+4. Intro to BAM/SAM formats
+5. Visualizatio of alignment in IGV
+6. BAM read counting
+7. Expression estimation for known genes and transcripts
+8. Differential Expression analysis
+9. Downstream interpretation of expression
+10. Alignment free estimation of expression with Kallisto/Sleuth
+11. Isoform discovery w StringTie
+12. Differential splicing analysis with Ballgown
+13. Examine and visualize junction counts
+14. DeNovo assembly with Trinity
+15. Transcript annotation with Trinotate
+16. ScRNAseq applications/advantages/challenges
+17. 10x/CellRanger overview
+18. Custom scRNAseq analysis in R
 
 ### Software
 
