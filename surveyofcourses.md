@@ -1,4 +1,6 @@
-## [Fredhutch.io’s old Galaxy materials](https://github.com/fredhutchio/rnaseq-class)
+# Comparison of other RNAseq course materials
+
+## [Fredhutch.io’s Galaxy materials](https://github.com/fredhutchio/rnaseq-class)
 
 A quick start guide to doing RNA-sequencing analysis in Galaxy. Covers Importing data through gene expression analysis.
 
@@ -27,7 +29,7 @@ Lecture materials from the UW Tools For Computational Biology course. Covers Bio
 
 ### Scope
 * R Markdown course materials
-* 
+* Bioconductor tools to extract meaning from previously mapped files
 
 ### Outline
 1. Genomic data analysis
@@ -41,7 +43,7 @@ Lecture materials from the UW Tools For Computational Biology course. Covers Bio
   2. Reading varients from VCF
 
 ### Software
-* R
+* R (Bioconductor)
   * Rsamtools
   * VariantAnnotation
   * GenomicRanges
@@ -66,10 +68,21 @@ A series of shell and R scripts used to process RNA sequencing data
 ## [Amy P’s repository with code and documentation for Pathways/SHIP, for materials translatable to high school students](https://github.com/FredHutch/pathways-SHIP-RNAseq)
 
 ### Scope
+- workflow used with undergrad interns to analyze RNAseq data for variety of labs
 
 ### Outline
+- STAR two pass alignment
+- RNASeQC
+- post-processing in R for DGE 
+  - import metadata and data
+  - assess gene data
+  - annotate gene names
+  - create counts matrix, phenotype matrix, SummarizedExperiment object
+  - DGE
 
 ### Software
+- STAR, RNASeQC
+- Tidyverse and DESeq2
 
 ## [Alex’s Lemonade Stand RNAseq materials](https://github.com/AlexsLemonade/RNA-Seq-Exercises)
 
@@ -152,19 +165,88 @@ An in depth course covering all aspects of RNA-seq analysis.
 18. Custom scRNAseq analysis in R
 
 ### Software
+- EC2, unix commands for cloud computing (more info [here](https://rnabio.org/module-00-setup/0000/08/01/Unix/))
+- SAMtools, bam-readcount, HISAT2, StringTie, gffcompare, htseq-count, TopHat,kallisto, FastQC, MultiQC, Picard, Flexbar, Regtools, RSeQC, bedops, gtfToGenePred, genePredToBed, how_are_we_stranded_here, R, tidyverse, Bioconductor, Sleuth (more info [here](https://rnabio.org/module-00-setup/0000/10/01/Installation/))
 
-## [Harvard](https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon-flipped/)
+## Harvard
+
+They have a series of RNAseq classes offered, 
+using various approaches and infrastructure.
+The synopsis here includes:
+- https://github.com/hbctraining/rnaseq_overview
+- https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon-flipped/ (most recent)
 
 ### Scope
+- overview is conceptual, ~5 hours
+- HPC is skills-based, 7.5 hours of instructor-led with substantial prep for participants, including homework to submit
 
 ### Outline
 
+Overview:
+- library prep
+- sequencing steps and sequences
+- experimental planning considerations
+- strategies for bulk-RNAseq analysis
+- data management
+- raw data QC
+- mapping/quantification
+- sample-level assessment
+- count modeling and hypothesis testing
+- visualization of results
+- functional analysis
+
+HPC:
+- working in HPC
+- Project organization and data management
+- quality control of data
+- sequence alignment
+- alignment-free methods
+- troubleshooting RNAseq data analysis
+- automating the RNAseq workflow
+
+Other materials:
+- Intro to R: https://hbctraining.github.io/Intro-to-R-flipped/#lessons
+- Intro to DGE: https://hbctraining.github.io/DGE_workshop_salmon_online/#lessons
+
 ### Software
+
+Overview: none
+
+HPC:
+- FileZilla, text editor, gitbash
+- uses on-premise compute
+- fastqc, slurm, salmon, MultiQC, bash, R, DGE
 
 ## [nf-core](https://nf-co.re/rnaseq)
 
 ### Scope
 
-### Outline
+Nextflow pipeline
 
-### Software
+### Outline and software
+
+This was copy and pasted from outline:
+
+1. Download FastQ files via SRA, ENA or GEO ids and auto-create input samplesheet (ENA FTP; if required)
+2. Merge re-sequenced FastQ files (cat)
+3. Read QC (FastQC)
+4. UMI extraction (UMI-tools)
+5. Adapter and quality trimming (Trim Galore!)
+6. Removal of ribosomal RNA (SortMeRNA)
+7. Choice of multiple alignment and quantification routes:
+  - STAR -> Salmon
+  - STAR -> RSEM
+  - HiSAT2 -> NO QUANTIFICATION
+8. Sort and index alignments (SAMtools)
+9. UMI-based deduplication (UMI-tools)
+10. Duplicate read marking (picard MarkDuplicates)
+11. Transcript assembly and quantification (StringTie)
+12. Create bigWig coverage files (BEDTools, bedGraphToBigWig)
+13. Extensive quality control:
+- RSeQC
+- Qualimap
+- dupRadar
+- Preseq
+- DESeq2
+14. Pseudo-alignment and quantification (Salmon; optional)
+15. Present QC for raw read, alignment, gene biotype, sample similarity, and strand-specificity checks (MultiQC, R)
