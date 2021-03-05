@@ -14,3 +14,4 @@ knitr::opts_chunk$set(echo = TRUE)
 By the end of this class, you should be able to:
 - Create and customize
 - MA-plot, volcano plot, heat map
+- creating reproducible report with R markdown?

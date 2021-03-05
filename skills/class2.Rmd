@@ -27,3 +27,4 @@ By the end of this class, you should be able to:
 - gene vs transcript
 - pseudomapping
 - IGV
+- creating unix script with all code (hw?)
