@@ -37,6 +37,8 @@
 ### R to cover in RNAseq skills class
 - installing Bioconductor packages
 - working with R markdown file?
+- specifics of Bioconductor objects?
+- biomart for annotations if necessary?
 
 ### Other resources
 - Intro to R (including tidyverse)
