@@ -16,3 +16,6 @@
 ## so not appropriate to track)
 data/*
 figures/*
+
+## Class-specific files
+mouseENCODEreanalysis/*
