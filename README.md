@@ -17,7 +17,7 @@ These materials are currently in development.
 Documentation related to course development includes:
 - [Survey of other RNAseq courses and workflows](surveyofcourses.md)
 - [Pre-requisites for skills course](skills/prerequisites.md)
-- [Scripts being developed for skills course](skills/scripts/)
+- [Scripts being developed for skills course](https://github.com/fredhutchio/rnaseq/skills/scripts/)
 
 Lessons are available for the following courses:
 - [Concepts in bulk RNAseq analysis](concepts/): lecture-style course discussing foundational ideas 
@@ -29,7 +29,8 @@ Please see the links above for course objectives and schedules.
 
 Please see the following resources for more information on:
 - [**Teaching**](https://github.com/fredhutchio/instructors) these materials.
-[`instructors.md`](instructors.md) includes information for instructors to facilitate teaching each lesson.
+[`instructors.md`](instructors.md) includes information for instructors to facilitate teaching each lesson,
+including learner profiles that describe the intended audience for these materials.
 [`hackmdio.md`](hackio.md) is an archive of the [interactive webpage](https://hackmd.io) used during lessons.
 - [**Contributing**](https://github.com/fredhutchio/curriculum_contribution) to lessons.
 Each lesson's materials are described in markdown (`.md`) files
