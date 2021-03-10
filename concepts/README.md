@@ -37,10 +37,4 @@ The HackMD (interactive page used for sharing links and information) for instruc
 
 ## For curriculum contributors and instructors
 
-Please see the following resources for more information on:
-- [**Teaching**](https://github.com/fredhutchio/instructors) these materials.
-[`instructors.md`](instructors.md) includes information for instructors to facilitate teaching each lesson.
-[`hackmdio.md`](hackio.md) is an archive of the [interactive webpage](https://hackmd.io) used during lessons.
-- [**Contributing**](https://github.com/fredhutchio/curriculum_contribution) to lessons.
-Each lesson's materials are described in markdown (`.md`) files
-in the [GitHub repository](FIXME).
+Please see the [RNAseq course series](../README.md) information for teaching and contributing to these materials.

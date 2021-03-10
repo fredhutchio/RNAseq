@@ -5,7 +5,9 @@ These genomics-focused materials are designed for research scientists with minim
 as well as computationally proficient staff who are interested in learning best practices for working with research software.
 The concepts course listed above (or equivalent knowledge) is a pre- or co-requisite for this course.
 As this class focuses on applying reproducible computational methods (e.g., computer coding) to interrogate bioinformatics data,
-additional pre-requisites include Introduction to R (or equivalent knowledge). FIXME: basic familiarity with Unix command line (or one-hour crash course), include things this class doesn't include (developing workflows, Galaxy)
+additional pre-requisites include Introduction to R (or equivalent knowledge). 
+
+FIXME: basic familiarity with Unix command line (or one-hour crash course), include things this class doesn't include (developing workflows, Galaxy)
 
 By the end of this course,
 you should be able to:
@@ -45,10 +47,4 @@ The links above reference relevant sections of [fredhutch.io's Software page](ht
 
 ## For curriculum contributors and instructors
 
-Please see the following resources for more information on:
-- [**Teaching**](https://github.com/fredhutchio/instructors) these materials.
-[`instructors.md`](instructors.md) includes information for instructors to facilitate teaching each lesson.
-[`hackmdio.md`](hackio.md) is an archive of the [interactive webpage](https://hackmd.io) used during lessons.
-- [**Contributing**](https://github.com/fredhutchio/curriculum_contribution) to lessons.
-Each lesson's materials are described in markdown (`.md`) files
-in the [GitHub repository](FIXME).
+Please see the [RNAseq course series](../README.md) information for teaching and contributing to these materials.
