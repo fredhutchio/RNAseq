@@ -25,7 +25,7 @@ please ensure you have installed XXX as described [here](http://www.fredhutch.io
 By the end of this class, you should be able to:
 - Use command-line bioinformatics software to map genomic reads to a reference genome
 - Visualize and summarize results of read mapping
-- creating unix script with all code (supplemental?)
+- creating unix script with all code (simple shell script sv slurm, supplemental?)
 - Differentiate results for mapping genes vs transcripts? (supplemental?)
 - pseudomapping? (supplemental?)
  
