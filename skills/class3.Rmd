@@ -12,5 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Objectives
 
 By the end of this class, you should be able to:
-- Bioconductor 
-- EdgeR, limma voom, DESeq
+- Install, load, and operate R packages from Bioconductor
+- Use EdgeR to assess differential gene expression (DGE)
+- Perform hypothesis testing for DGE analysis
+- limma, voom, DESeq (supplemental?)

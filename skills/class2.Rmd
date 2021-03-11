@@ -23,8 +23,9 @@ Before proceeding with these training materials,
 please ensure you have installed XXX as described [here](http://www.fredhutch.io/software/).
 
 By the end of this class, you should be able to:
-- mapping tools
-- gene vs transcript
-- pseudomapping
-- IGV
-- creating unix script with all code (hw?)
+- Use command-line bioinformatics software to map genomic reads to a reference genome
+- Visualize and summarize results of read mapping
+- creating unix script with all code (supplemental?)
+- Differentiate results for mapping genes vs transcripts? (supplemental?)
+- pseudomapping? (supplemental?)
+ 

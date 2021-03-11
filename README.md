@@ -9,7 +9,7 @@ the data and computational analysis training program at Fred Hutch.
 
 Sessions of these courses are periodically taught by instructors at Fred Hutch. The materials are also freely available for self-guided, work-at-your-own-pace study.
 
-Information about RNAseq is also available on the [Fred Hutch Biomedical Data Science Wiki]((https://sciwiki.fredhutch.org/generation/datagen_rnaApproaches/)).
+Information about RNAseq is also available on the [Fred Hutch Biomedical Data Science Wiki](https://sciwiki.fredhutch.org/generation/datagen_rnaApproaches/).
 
 ## Course materials
 

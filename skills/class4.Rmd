@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Objectives
 
 By the end of this class, you should be able to:
-- Create and customize
+- Create and customize visualizations to communicate DGE results
 - MA-plot, volcano plot, heat map
-- creating reproducible report with R markdown?
+- reproducibility?
+- creating reproducible report with R markdown (supplemental?)
