@@ -25,6 +25,9 @@ Lessons are available for the following courses:
 
 Please see the links above for course objectives and schedules.
 
+If you have general questions about performing genomic analyses,
+please see [our FAQs](https://fredhutchio.github.io/genomics/#faqs).
+
 ## For curriculum contributors and instructors
 
 Please see the following resources for more information on:
