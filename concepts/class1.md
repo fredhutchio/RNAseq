@@ -25,27 +25,51 @@ By the end of this lesson,
 you should be able to:
 - RNAseq workflow
 - experimental design
-  - replicates, read length, SE vs PE
-  - balancing statistical power: number of samples vs sequencing depth; more samples better than deeper sequencing
-- data types (mRNA stranded, mRNA non-stranded, rRNA depleted) and technical limitations of each
+- data types and technical limitations of each
 - quality assessment of data
 
 ## Overview of RNAseq workflows
 
+FIXME: diagram of overall process (same as skills)
 
-## Experimental design
+describe range of applications for RNAseq
 
-
-
+> Although this isn't a technical/coding course,
+> we'll mention the names of software commonly applied for each step.
+> This is to help orient you to what you may have already read/heard about RNAseq analysis.
 
 ## Data types
 
+basic terminology: draws on molecular biology knowledge, but some additional ideas specific to sequencing technology
+
+technical limitations of each approach
+
+read length, SE vs PE
+
+mRNA stranded, mRNA non-stranded, rRNA depleted
+
+## Experimental design
+
+includes considerations of how libraries are prepared
+
+replicates
+
+balancing statistical power: number of samples vs sequencing depth; more samples better than deeper sequencing
+
 ## Quality assessment
 
-## Putting it together
+potential issues with read quality
 
 ENCODE tags data that may be potentially problematic.
 View their page auditing data [here](https://www.encodeproject.org/data-standards/audits/)
+
+read filtering
+
+read trimming
+
+reassessing quality
+
+## Putting it together
 
 EXERCISE: look at examples of read data and identify differences among them. Are these types of data compatible for analysis? What would need to be done to combine them? https://www.encodeproject.org/search/?type=Experiment&assay_term_name=polyA+plus+RNA-seq&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&status=released&biosample_ontology.organ_slims=brain
 

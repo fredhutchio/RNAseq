@@ -16,3 +16,7 @@ By the end of this class, you should be able to:
 - Use EdgeR to assess differential gene expression (DGE)
 - Perform hypothesis testing for DGE analysis
 - limma, voom, DESeq (supplemental?)
+
+## Metadata
+
+metadata: csv file including sample name (fastq file usually), group information, path to BAM file for sample

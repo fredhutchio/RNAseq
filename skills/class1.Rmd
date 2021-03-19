@@ -38,14 +38,24 @@ FIXME diagram of study design
 
 3x3 comparison of two tissues
 
-Work through mouse materials in class,
-human data provided and available for homework and personal exploration
+Work through human materials in class,
+mouse data provided and available for homework and personal exploration
+
+For first two classes,
+only work with single sample (save time).
+only chromosome 9, result in sparse gene matrix
+
+Intermediate results available for reference
+
+Pre-analyzed data for all samples provided for third and fourth classes.
+
+whole genome, complete count matrix for multiple samples; result is DGE across multiple samples
 
 ## Overview of workflow
 
 FIXME diagram of workflow
 
-Questions to ask at each step of the analysis?
+Questions to ask at each step of the analysis:
 - Are data organized and formatted appropriately?
 - What characteristics of the data type and experimental design need to be considered?
 - Are the results reliable, verifiable, and consistent with expectations?
@@ -70,11 +80,17 @@ https://sciwiki.fredhutch.org/compdemos/first_rhino/
 
 ## Trimming and filtering data
 
-initial QC
+initial QC (fastqc)
 
 trimming and quality filtering
 
-follow-up QC
+filtering (cutadapt)
+only for de novo assembly, or other special cases
+
+follow-up QC (multiQC)
+
+fastqc
+MultiQC: https://multiqc.info
 
 ## Wrapping up
 

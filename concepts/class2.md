@@ -10,6 +10,26 @@ you should be able to:
 - gene level vs transcript level
 - quantifying gene expression (htseq-count, cufflinks, RSEM)
 
+## Read mapping
+
+STAR2
+
+## Read mapping quality assessment
+
+RNAseQC https://software.broadinstitute.org/cancer/cga/rna-seqc
+
+percent alignment, paired alignment (vs singletons)
+strandedness, gene body coverage
+
+marks PCR duplicates, but this can be misleading because this varies for RNAseq experiments
+
+## Reference genomes, assemblies, and annotations
+
+## Quantifying genes and transcripts
+
+are read counts from different methods consistent? do any differences matter? multimapping differences are main source of disagreement in results
+PCA plots for replicates
+
 ## Putting it together
 
 EXERCISE: assess quality of mapped data give some images/summary stats

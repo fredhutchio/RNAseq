@@ -29,3 +29,27 @@ By the end of this class, you should be able to:
 - Differentiate results for mapping genes vs transcripts? (supplemental?)
 - pseudomapping? (supplemental?)
  
+## Read mapping
+
+read mappers can handle trimming: TCGA defined two-pass workflow, can be done in a single pass
+
+> One of the tricky parts of working in bioinformatics is that methods continue to develop rapidly.
+> The incorporation of quality filtering and trimming when mapping reads is a good example.
+> Understanding the assumptions of the software you're using is essential!
+
+How to choose reference data?
+
+connections to reference data (older index data aren't compatible with some newer programs)
+
+## Read mapping QC
+
+RNAseQC https://software.broadinstitute.org/cancer/cga/rna-seqc
+
+lighterweight tool? can choose which assessments to run
+IGV
+
+## Quantifying genes
+
+STAR2 can generate count data (stranded, unstranded) but show how to generate count data with a different tool
+FeatureCounts (subread) 
+
