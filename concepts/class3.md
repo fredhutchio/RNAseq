@@ -8,10 +8,13 @@ you should be able to:
 - Analysis tools: EdgeR, limma voom, DESeq
 - visualizing results (MA-plot, volcano plot, heat map)
 
-## Getting started
+## Putting it together
 
+EXERCISE: choosing setup for hypothesis testing (distractors are other metadata)
 
+EXERCISE: interpreting volcano plot, MA-plot
 
+EXERCISE: interpreting heat map
 
 ## Wrapping up
 

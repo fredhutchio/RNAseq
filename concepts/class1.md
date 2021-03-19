@@ -30,20 +30,36 @@ you should be able to:
 - data types (mRNA stranded, mRNA non-stranded, rRNA depleted) and technical limitations of each
 - quality assessment of data
 
-## Getting started
+## Overview of RNAseq workflows
+
+
+## Experimental design
 
 
 
+
+## Data types
+
+## Quality assessment
+
+## Putting it together
+
+ENCODE tags data that may be potentially problematic.
+View their page auditing data [here](https://www.encodeproject.org/data-standards/audits/)
+
+EXERCISE: look at examples of read data and identify differences among them. Are these types of data compatible for analysis? What would need to be done to combine them? https://www.encodeproject.org/search/?type=Experiment&assay_term_name=polyA+plus+RNA-seq&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&status=released&biosample_ontology.organ_slims=brain
+
+EXERCISE: you are designing an RNAseq experiment to test a hypothesis that [some experimental treatment] affects [some tissue function].
+What do you need to consider and discuss when coordinating with the Genomics Core to prepare these data?
+
+EXERCISE: interpret the QC of raw sequencing data below.
+Are these data acceptable for analysis?
 
 ## Wrapping up
-
-make sure work is saved
-
-review how to get back into work
 
 review objectives
 
 preview next class's objectives
 
-## Errata
-
+Reference material:
+https://datacarpentry.org/organization-genomics/03-ncbi-sra/index.html

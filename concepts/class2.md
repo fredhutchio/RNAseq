@@ -10,20 +10,16 @@ you should be able to:
 - gene level vs transcript level
 - quantifying gene expression (htseq-count, cufflinks, RSEM)
 
-## Getting started
+## Putting it together
 
+EXERCISE: assess quality of mapped data give some images/summary stats
 
+EXERCISE: choose reference genome appropriate for a tricky analysis (data combination?)
 
+EXERCISE: choose whether gene or transcript level is more appropriate, interpreting read quantification?
 
 ## Wrapping up
-
-make sure work is saved
-
-review how to get back into work
 
 review objectives
 
 preview next class's objectives
-
-## Errata
-

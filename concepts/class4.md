@@ -9,10 +9,11 @@ you should be able to:
 - isoforms & alternative splicing, lincRNAs, SNVs & RNA editing, multiple species (xenografts, viral, etc) 
 - other types of RNA-seq: single-cell (sc) RNA-seq, small RNA-seq, Ribo-seq, nascent RNA-seq
 
-## Getting started
+## Putting it together
 
+EXERCISE: type of analysis to interpret results (GO)
 
-
+EXERCISE: want to ask a follow up question, what type of data are appropriate?
 
 ## Wrapping up
 
