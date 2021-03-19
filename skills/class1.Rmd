@@ -12,12 +12,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Objectives
 
 Welcome to Bulk RNAseq Analysis from fredhutch.io!
-This course introduces you XXX:
-XXX. 
+This course introduces you the following steps in performing RNAseq analysis:
+- project organization and access via Hutch data storage and compute
+- data pre-processing and quality assessment
+- read mapping and summary to quantify genes/transcripts
+- differential gene analysis and visualization
 
 For more information about RNAseq and genomics work, 
-please see the [RNA approaches](https://sciwiki.fredhutch.org/generation/datagen_rnaApproaches) 
-resources in the Fred Hutch Biomedical Data Science Wiki.
+please see the resources for [RNA approaches](https://sciwiki.fredhutch.org/generation/datagen_rnaApproaches) 
+in the Fred Hutch Biomedical Data Science Wiki.
 
 Before proceeding with these training materials,
 please ensure you have installed XXX as described [here](http://www.fredhutch.io/software/).
@@ -27,29 +30,43 @@ By the end of this class, you should be able to:
 - Trim and filter raw genomic data based
 - Assess the quality of genomic data
 
-## Project organization and reproducibility
+## About the data
+
+Human and mouse data from ENCODE project
+
+FIXME diagram of study design
+
+3x3 comparison of two tissues
+
+Work through mouse materials in class,
+human data provided and available for homework and personal exploration
+
+## Overview of workflow
+
+FIXME diagram of workflow
+
+Questions to ask at each step of the analysis?
+- Are data organized and formatted appropriately?
+- What characteristics of the data type and experimental design need to be considered?
+- Are the results reliable, verifiable, and consistent with expectations?
+
+## Project organization, compute environment, and reproducibility
 
 Project-based file management
 
 How genomics projects differ, with data stored separately
 
-idiosyncratic things about Hutch infrastructure (network drives)
-
-accessing Unix-stored data from Mac vs Windows
+connections with Hutch infrastructure
+- network drives
+- accessing and transferring Unix-stored data from Mac vs Windows
 
 Connections to reproducibility
 - record keeping
 - helps you in the future
 - can potentially help other people as well
 
-## About the data
-
-Human and mouse data from ENCODE project
-
-3x3 comparison of two tissues
-
-Work through mouse materials in class,
-human data provided and available for homework and personal exploration
+Logging on to `rhino`
+https://sciwiki.fredhutch.org/compdemos/first_rhino/
 
 ## Trimming and filtering data
 
@@ -58,3 +75,20 @@ initial QC
 trimming and quality filtering
 
 follow-up QC
+
+## Wrapping up
+
+saving work
+
+accessing work again
+
+review objectives
+
+preview next class's objectives
+
+Reference materials:
+https://datacarpentry.org/organization-genomics/
+
+## On your own
+
+
