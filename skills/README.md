@@ -5,9 +5,8 @@ These genomics-focused materials are designed for research scientists with minim
 as well as computationally proficient staff who are interested in learning best practices for working with research software.
 The concepts course listed above (or equivalent knowledge) is a pre- or co-requisite for this course.
 As this class focuses on applying reproducible computational methods (e.g., computer coding) to interrogate bioinformatics data,
-additional pre-requisites include Introduction to R (or equivalent knowledge). 
-
-FIXME: basic familiarity with Unix command line (or one-hour crash course), include things this class doesn't include (developing workflows, Galaxy)
+additional pre-requisites include prior experience with both the Unix shell and R statistical programming.
+See [Prerequisites](#prerequisites) for more information about what concepts and skills should be familiar to you before this course.
 
 By the end of this course,
 you should be able to:
@@ -17,11 +16,26 @@ you should be able to:
 - Quantify RNAseq data at the gene level
 - Create visualizations and test hypotheses
 
-Please see each set of class materials for specific learning objectives. 
+Please see each set of class materials for specific learning objectives.
 
-[[links to other materials that have been adapted in this lesson]]
+FIXME: this class doesn't include (developing workflows, Galaxy)
 
 Solutions for exercises can be found in [here](solutions/README.md).
+
+### Prerequisites
+
+### Unix shell
+
+[Introduction to the Unix Shell](https://fredhutchio.github.io/unix_shell_intro/),
+or [Unix Crash Course](https://fredhutchio.github.io/unix_shell_intro/crash_course)
+
+### R
+
+[Introduction to R](https://fredhutchio.github.io/r_intro/)
+
+- working in RStudio with RStudio projects, saving work as scripts
+- object assignment
+- using functions
 
 ### Skills schedule 
 

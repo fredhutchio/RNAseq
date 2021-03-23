@@ -88,5 +88,5 @@ review objectives
 
 preview next class's objectives
 
-Reference material:
-https://datacarpentry.org/organization-genomics/03-ncbi-sra/index.html
+**Further reading:**
+- Data Carpentry: [Project Organization and Management for Genomics](https://datacarpentry.org/organization-genomics/03-ncbi-sra/index.html)

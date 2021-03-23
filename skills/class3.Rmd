@@ -17,6 +17,30 @@ By the end of this class, you should be able to:
 - Perform hypothesis testing for DGE analysis
 - limma, voom, DESeq (supplemental?)
 
+## Bioconductor 
+
+- installing Bioconductor packages
+- working with R markdown file?
+- specifics of Bioconductor objects?
+- biomart for annotations if necessary?
+
 ## Metadata
 
 metadata: csv file including sample name (fastq file usually), group information, path to BAM file for sample
+
+> #### Data from someone else.
+>
+> If you are collaborating with researchers external to the Hutch,
+> you may receive counts files, perhaps even including annotations,
+> that are ready to be imported into R.
+> The format and assumptions of such files may differ from those described here.
+> We recommend clarifying with your collaborators how the data have been processed.
+> Some questions to ask include:
+> - Have the data been transformed and/or normalized?
+> - How were annotations applied? Are there duplicate gene names?
+
+## Wrapping up
+
+**Further reading:**
+- Intro to Bioconductor
+- R scripts vs notebooks/Rmd

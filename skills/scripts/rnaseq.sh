@@ -14,7 +14,7 @@ REF
 
 ## Quality assessment and filtering of raw genomic data
 ml FastQC/0.11.8-Java-1.8
-fastqc 
+fastqc *.fastq.gz
 multiQC
 
 ## Read trimming and filtering

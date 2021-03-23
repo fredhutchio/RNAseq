@@ -18,6 +18,9 @@ This course introduces you the following steps in performing RNAseq analysis:
 - read mapping and summary to quantify genes/transcripts
 - differential gene analysis and visualization
 
+This course assumes a general knowledge of both the Unix shell and R statistical programming.
+See [Prerequisites](../README#prerequisites) for more information about what concepts and skills should be familiar to you before this course.
+
 For more information about RNAseq and genomics work, 
 please see the resources for [RNA approaches](https://sciwiki.fredhutch.org/generation/datagen_rnaApproaches) 
 in the Fred Hutch Biomedical Data Science Wiki.
@@ -110,4 +113,13 @@ https://datacarpentry.org/organization-genomics/
 
 ## On your own
 
+## Wrapping up
 
+**Further reading:**
+- Intro to Unix
+- HPC: On-premise
+
+### Unix to cover in RNAseq skills class
+- running command-line programs
+- tar and gzip (and corresponding unix commands)
+- idiosyncratic scripting (breaking commands onto multiple lines, flags for genomics software, etc)
