@@ -56,6 +56,9 @@ replicates
 
 balancing statistical power: number of samples vs sequencing depth; more samples better than deeper sequencing
 
+Section 1-3
+https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html
+
 ## Quality assessment
 
 potential issues with read quality

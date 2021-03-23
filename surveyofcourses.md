@@ -250,3 +250,30 @@ This was copy and pasted from outline:
 - DESeq2
 14. Pseudo-alignment and quantification (Salmon; optional)
 15. Present QC for raw read, alignment, gene biotype, sample similarity, and strand-specificity checks (MultiQC, R)
+
+## [RNAseq 123](https://bioconductor.org/packages/release/workflows/html/RNAseq123.html)
+
+### Scope
+
+DGE with Bioconductor 
+
+### Outline
+
+- 4 Data packaging
+  - 4.1 Reading in count-data
+  -4.2 Organising sample information
+  -4.3 Organising gene annotations
+- 5 Data pre-processing
+  -5.1 Transformations from the raw-scale
+  -5.2 Removing genes that are lowly expressed
+  -5.3 Normalising gene expression distributions
+  -5.4 Unsupervised clustering of samples
+- 6 Differential expression analysis
+  -6.1 Creating a design matrix and contrasts
+  -6.2 Removing heteroscedascity from count data
+  -6.3 Fitting linear models for comparisons of interest
+  -6.4 Examining the number of DE genes
+  -6.5 Examining individual DE genes from top to bottom
+  -6.6 Useful graphical representations of differential expression results
+- 7 Gene set testing with camera
+- 

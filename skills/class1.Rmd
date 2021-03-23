@@ -51,6 +51,9 @@ Pre-analyzed data for all samples provided for third and fourth classes.
 
 whole genome, complete count matrix for multiple samples; result is DGE across multiple samples
 
+Section 4 onwards 
+https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html
+
 ## Overview of workflow
 
 FIXME diagram of workflow
