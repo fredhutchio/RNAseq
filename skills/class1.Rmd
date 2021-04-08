@@ -72,6 +72,14 @@ Project-based file management
 
 How genomics projects differ, with data stored separately
 
+Setting up directory structure
+- data and metadata
+- intermediate results
+- final output
+- logs (commands and output from programs)
+
+Writing a README
+
 connections with Hutch infrastructure
 - network drives
 - accessing and transferring Unix-stored data from Mac vs Windows

@@ -51,5 +51,7 @@ IGV
 ## Quantifying genes
 
 STAR2 can generate count data (stranded, unstranded) but show how to generate count data with a different tool
-FeatureCounts (subread) 
+featureCounts from [Subread](http://subread.sourceforge.net)
+
+> Subread is also implemented in the R package [Rsubread](http://bioconductor.org/packages/release/bioc/html/Rsubread.html)
 

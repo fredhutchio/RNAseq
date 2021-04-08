@@ -50,12 +50,22 @@ The HackMD (interactive page used for sharing links and information) for instruc
 
 Each class in this course includes code-along tutorials interspersed with challenge exercises.
 
-*Required software:**
+**Required software:**
 
 Software used in this course include:
 - Unix shell (to access cluster)
-- Text editor?
-- IGV?
+- IGV
+- Text editor
+- R and RStudio and Bioconductor packages (see classes 3 and 4)
+
+If you would like to run analysis on your own computer
+(instead of on the cluster),
+you will also need:
+- fastqc
+- cutadapt
+- STAR
+- subread
+
 
 The links above reference relevant sections of [fredhutch.io's Software page](http://www.fredhutch.io/software/).
 

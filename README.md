@@ -14,10 +14,7 @@ Information about RNAseq is also available on the [Fred Hutch Biomedical Data Sc
 ## Course materials
 
 These materials are currently in development.
-Documentation related to course development includes:
-- [Survey of other RNAseq courses and workflows](surveyofcourses.md)
-- [Pre-requisites for skills course](skills/prerequisites.md)
-- [Scripts being developed for skills course](https://github.com/fredhutchio/rnaseq/skills/scripts/)
+Additional publicly available materials for equivalent courses are described [here](surveyofcourses.md).
 
 Lessons are available for the following courses:
 - [Concepts in bulk RNAseq analysis](concepts/): lecture-style course discussing foundational ideas 
