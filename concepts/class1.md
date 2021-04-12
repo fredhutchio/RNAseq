@@ -91,3 +91,4 @@ preview next class's objectives
 
 **Further reading:**
 - Data Carpentry: [Project Organization and Management for Genomics](https://datacarpentry.org/organization-genomics/03-ncbi-sra/index.html)
+- [HBC Training RNAseq course](https://github.com/hbctraining/Training-modules/tree/master/planning_successful_rnaseq)
