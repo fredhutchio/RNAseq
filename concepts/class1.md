@@ -30,9 +30,9 @@ you should be able to:
 
 ## Overview of RNAseq workflows
 
-FIXME: diagram of overall process (same as skills)
+IMAGE: diagram of overall process (same as skills course)
 
-describe range of applications for RNAseq
+FIXME: applications for RNAseq (DGE)
 
 > Although this isn't a technical/coding course,
 > we'll mention the names of software commonly applied for each step.
@@ -40,13 +40,14 @@ describe range of applications for RNAseq
 
 ## Data types
 
-basic terminology: draws on molecular biology knowledge, but some additional ideas specific to sequencing technology
+FIXME and IMAGE(S): terminology related to data types:
+- read length
+- SE vs PE
+- mRNA stranded
+- mRNA non-stranded
+- rRNA depleted
 
 technical limitations of each approach
-
-read length, SE vs PE
-
-mRNA stranded, mRNA non-stranded, rRNA depleted
 
 ## Experimental design
 
