@@ -32,6 +32,9 @@ you should be able to:
 
 IMAGE: diagram of overall process (same as skills course)
 
+- [A very simple overview from the hbc course](https://github.com/hbctraining/Training-modules/blob/master/planning_successful_rnaseq/img/de_workflow2019.png)
+- [Workflow overview from EMBL-EBI Training materials](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/)
+
 FIXME: applications for RNAseq (DGE)
 
 > Although this isn't a technical/coding course,
@@ -42,10 +45,22 @@ FIXME: applications for RNAseq (DGE)
 
 FIXME and IMAGE(S): terminology related to data types:
 - read length
+  - [From Illumina](https://www.illumina.com/science/technology/next-generation-sequencing/plan-experiments/read-length.html): read length refers to the number of base pairs (bp) sequenced from a DNA fragment. After sequencing, the regions of overlap between reads are used to assemble and align the reads to a reference genome, reconstructing the full DNA sequence. Sequencing read lengths correspond directly to the sequencing reagents used on an NGS instrument—more chemistry cycles generate longer reads.
+  - [From Columbia Genome Center](https://systemsbiology.columbia.edu/genome-sequencing-defining-your-experiment): During sequencing, it is possible to specify the number of base pairs that are read at a time. For example, one read might consist of 50 base pairs, 100 base pairs, or more. Longer reads can provide more reliable information about the relative locations of specific base pairs. (This helps to address a common challenge that arises in sequencing because the same read sequences can appear in multiple places within a genome.) However, it is usually more expensive to generate longer reads.
 - SE vs PE
+  - [From Columbia Genome Center](https://systemsbiology.columbia.edu/genome-sequencing-defining-your-experiment):
+    - Paired End - paired-end reading it starts at one read, finishes this direction at the specified read length, and then starts another round of reading from the opposite end of the fragment. Paired-end reading improves the ability to identify the relative positions of various reads in the genome, making it much more effective than single-end reading in resolving structural rearrangements such as gene insertions, deletions, or inversions. It can also improve the assembly of repetitive regions. This degree of accuracy may not be required for all experiments, however, and paired-end reads are more expensive and time-consuming to perform than single-end reads.
+    - Single End - In single-end reading, the sequencer reads a fragment from only one end to the other, generating the sequence of base pairs
 - mRNA stranded
 - mRNA non-stranded
 - rRNA depleted
+  - [From Zhao, S., Zhang, Y., Gamini, R. et al. 2015 Nature paper](https://www.nature.com/articles/s41598-018-23226-4):
+    - Ribosomal RNA (rRNA) is the most highly abundant component of total RNA isolated from animal or human cells and tissues, comprising the majority (>80% to 90%) of the molecules in a total RNA sample7. To allow efficient transcript/gene detection, highly abundant rRNAs must be removed from total RNA before sequencing
+    - depletion of highly abundant rRNAs through hybridization capture followed by magnetic bead separation. 
+    - Good discussion of pros/cons of rRNA depletion vs PolyA+ selection
+  - [From ThermoFisher](https://www.thermofisher.com/us/en/home/life-science/dna-rna-purification-analysis/rna-extraction/rna-applications/ribosomal-rna-depletion.html):
+    - Ribosomal depletion is a critical method in transcriptomics that allows for efficient detection of functionally relevant coding as well as non-coding transcripts through removal of highly abundant rRNA species
+    - In our rRNA removal kits, rRNA is captured by complimentary oligonucleotides that are coupled to paramagnetic beads, after which the bound rRNA is precipitated and removed from the reaction. Using magnetic beads is considered the most efficient way to get high quality RNA.
 
 technical limitations of each approach
 
