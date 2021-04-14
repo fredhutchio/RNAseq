@@ -37,6 +37,13 @@ IMAGE: diagram of overall process (same as skills course)
 
 FIXME: applications for RNAseq (DGE)
 
+- [From EMBL-EBI Functional Genomics training](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/):
+  - gene expression profiling between samples
+  - study of alternative splicing events (differential inclusion/exclusion of exons in the processed RNA product after splicing of a precursor RNA segment) associated with diseases
+  - identification of allele-specific expression, disease-associated single nucleotide polymorphisms (SNPs) and gene fusions to understand, e.g. disease causal variants in cancer
+
+- [From cd-genomics](https://www.cd-genomics.com/resourse-Applications-of-RNA-Seq.html): Since RNA-seq is quantitative, it is useful to determine RNA expression levels. In addition to this basic function, RNA-seq can be used for differential gene expression, variants detection and allele-specific expression, small RNA profiling, characterization of alternative splicing patterns, system biology, and single-cell RNA-seq.
+
 > Although this isn't a technical/coding course,
 > we'll mention the names of software commonly applied for each step.
 > This is to help orient you to what you may have already read/heard about RNAseq analysis.
@@ -68,11 +75,47 @@ technical limitations of each approach
 
 ## Experimental design
 
+- [From Harvard Training](https://github.com/hbctraining/Training-modules/blob/master/planning_successful_rnaseq/lessons/experimental_planning_considerations.md):
+
+  - Important considerations for RNA sequencing experiments that greatly affect the quality of DEG analysis:
+
+    1. Number and type of replicates
+    2. Avoiding confounding
+    3. Addressing batch effects
+
 includes considerations of how libraries are prepared
 
 replicates
 
+- [From Harvard Training](https://github.com/hbctraining/Training-modules/blob/master/planning_successful_rnaseq/lessons/experimental_planning_considerations.md):
+  - technical replicate: use the same biological sample to repeat the technical or experimental steps in order to accurately measure technical variation and remove it during analysis.
+  - biological replicate: use different biological samples of the same condition to measure the biological variation between samples.
+  - with the current RNA-Seq technologies, technical variation is much lower than biological variation and technical replicates are unneccessary.
+  - In contrast, biological replicates are absolutely essential. For differential expression analysis, the more biological replicates, the better the estimates of biological variation and the more precise our estimates of the mean expression levels. This leads to more accurate modeling of our data and identification of more differentially expressed genes.
+  - biological replicates are of greater importance than sequencing depth
+
 balancing statistical power: number of samples vs sequencing depth; more samples better than deeper sequencing
+
+- [From Harvard Training](https://github.com/hbctraining/Training-modules/blob/master/planning_successful_rnaseq/lessons/experimental_planning_considerations.md):
+  - IMG: there is a figure on this page where x axis is number of reads and y is number of DE genes found where number of replicates is denoted by line width.
+    - figure shows the relationship between sequencing depth and number of replicates on the number of differentially expressed genes identified [1]. Note that an increase in the number of replicates tends to return more DE genes than increasing the sequencing depth. Therefore, generally more replicates are better than higher sequencing depth, with the caveat that higher depth is required for detection of lowly expressed DE genes and for performing isoform-level differential expression.
+
+  - guide lines to help with experiment planning
+    - General gene-level differential expression:
+      - ENCODE guidelines suggest 30 million SE reads per sample (stranded).
+      - 15 million reads per sample is often sufficient, if there are a good number of replicates (>3).
+      - Spend money on more biological replicates, if possible.
+    - Gene-level differential expression with detection of lowly-expressed genes:
+      - Similarly benefits from replicates more than sequencing depth.
+      - Sequence deeper with at least 30-60 million reads depending on level of expression (start with 30 million with a good number of replicates).
+    - Isoform-level differential expression:
+      - Of known isoforms, suggested to have a depth of at least 30 million reads per sample and paired-end reads.
+      - OF novel isoforms should have more depth (> 60 million reads per sample).
+      - Choose biological replicates over paired/deeper sequencing.
+      - Perform careful QC of RNA quality. Be careful to use high quality preparation methods and restrict analysis to high quality RIN # samples.
+    - Other types of RNA analyses (intron retention, small RNA-Seq, etc.):
+      - Different recommendations depending on the analysis.
+      - Almost always more biological replicates are better!
 
 Section 1-3
 https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html
@@ -81,12 +124,22 @@ https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc
 
 potential issues with read quality
 
+- [From Computational Genomics with R](https://compgenomr.github.io/book/quality-check-on-sequencing-reads.html): The sequencing technologies usually produce basecalls with varying quality. In addition, there could be sample-specific issues in your sequencing run, such as adapter contamination. It is standard procedure to check the quality of the reads and identify problems before doing further analysis. Checking the quality and making some decisions for the downstream analysis can influence the outcome of your project.
+  - sequence quality per base/cycle - quality scores across all bases at each position in the read
+  - sequence content per base/cycle - shows nucleotide proportions for each position
+  - read frequency - shows the degree of duplication for every read in the library. High levels of duplication is likely to indicate enrichment bias.
+    - 
+
 ENCODE tags data that may be potentially problematic.
 View their page auditing data [here](https://www.encodeproject.org/data-standards/audits/)
 
 read filtering
 
+- [From Computational Genomics with R](https://compgenomr.github.io/book/filtering-and-trimming-reads.html): The quality check might have shown the number of reads that have low quality scores. These reads will probably not align very well because of the potential mistakes in base calling, or they may align to wrong places in the genome. Therefore, you may want to remove these reads from your fastq file.
+
 read trimming
+
+- [From Computational Genomics with R](https://compgenomr.github.io/book/filtering-and-trimming-reads.html): Another potential scenario is that parts of your reads need to be trimmed in order to align the reads. In some cases, adapters will be present in either side of the read; in other cases technical errors will lead to decreasing base quality towards the ends of the reads. Both in these cases, the portion of the read should be trimmed so the read can align or better align the genome. 
 
 reassessing quality
 
