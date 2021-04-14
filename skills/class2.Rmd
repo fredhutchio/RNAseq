@@ -31,6 +31,8 @@ By the end of this class, you should be able to:
  
 ## Read mapping
 
+- idiosyncratic scripting (breaking commands onto multiple lines, flags for genomics software, etc)
+
 read mappers can handle trimming: TCGA defined two-pass workflow, can be done in a single pass
 
 > One of the tricky parts of working in bioinformatics is that methods continue to develop rapidly.

@@ -30,8 +30,9 @@ please ensure you have installed XXX as described [here](http://www.fredhutch.io
 
 By the end of this class, you should be able to:
 - Organize files (data, code, results) associated with genomics projects
-- Trim and filter raw genomic data based
+- Run command line genomics software on the Fred Hutch shared compute cluster, `rhino`
 - Assess the quality of genomic data
+- Trim and filter raw genomic data 
 
 ## About the data
 
@@ -57,7 +58,25 @@ whole genome, complete count matrix for multiple samples; result is DGE across m
 Section 4 onwards 
 https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html
 
-## Overview of workflow
+## Getting set up 
+
+Logging on to `rhino`
+https://sciwiki.fredhutch.org/compdemos/first_rhino/
+
+running interactive jobs with grabnode (https://sciwiki.fredhutch.org/compdemos/first_rhino/#logging-on-to-gizmo-via-grabnode)
+
+- loading modules (https://sciwiki.fredhutch.org/compdemos/first_rhino/#loading-software)
+
+tar and gzip (and corresponding unix commands)
+
+Connections to reproducibility
+- record keeping
+- helps you in the future
+- can potentially help other people as well
+
+## Project organization
+
+Overview of workflow
 
 FIXME diagram of workflow
 
@@ -65,8 +84,6 @@ Questions to ask at each step of the analysis:
 - Are data organized and formatted appropriately?
 - What characteristics of the data type and experimental design need to be considered?
 - Are the results reliable, verifiable, and consistent with expectations?
-
-## Project organization, compute environment, and reproducibility
 
 Project-based file management
 
@@ -84,15 +101,9 @@ connections with Hutch infrastructure
 - network drives
 - accessing and transferring Unix-stored data from Mac vs Windows
 
-Connections to reproducibility
-- record keeping
-- helps you in the future
-- can potentially help other people as well
-
-Logging on to `rhino`
-https://sciwiki.fredhutch.org/compdemos/first_rhino/
-
 ## Trimming and filtering data
+
+running command-line genomics programs
 
 initial QC (fastqc)
 
@@ -126,8 +137,3 @@ https://datacarpentry.org/organization-genomics/
 **Further reading:**
 - Intro to Unix
 - HPC: On-premise
-
-### Unix to cover in RNAseq skills class
-- running command-line programs
-- tar and gzip (and corresponding unix commands)
-- idiosyncratic scripting (breaking commands onto multiple lines, flags for genomics software, etc)
