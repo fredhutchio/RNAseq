@@ -5,30 +5,48 @@
 
 By the end of this class,
 you should be able to:
-- read mapping (tools and assessing quality)
-- assemblies and annotations (human and mouse)
-- gene level vs transcript level
-- quantifying gene expression (htseq-count, cufflinks, RSEM)
+- identify appropriate methods and quality assessment for mapping RNAseq reads
+- select appropriate assemblies and annotations for RNAseq experiments
+- differentiate between gene and transcript level analyses
+- identify approaches to quantifying gene expression from mapped reads
 
-## Read mapping
+## Methods of mapping reads
 
-STAR2
+IMAGE: read mapping 
 
-## Read mapping quality assessment
+FIXME: how do some of the different read mapping tools differ? are there other tools we should mention?
+- TopHat
+- BWA
+- STAR2
+- Salmon (and other pseudoalignment methods)
+
+## Assessing quality of mapped reads
 
 RNAseQC https://software.broadinstitute.org/cancer/cga/rna-seqc
 
-percent alignment, paired alignment (vs singletons)
-strandedness, gene body coverage
-
-marks PCR duplicates, but this can be misleading because this varies for RNAseq experiments
+FIXME: what do each of these quality assessments tell us?
+- percent alignment
+- paired alignment (vs singletons)
+- strandedness
+- gene body coverage
+- marks PCR duplicates (but this can be misleading because this varies for RNAseq experiments)
 
 ## Reference genomes, assemblies, and annotations
 
-## Quantifying genes and transcripts
+## Quantifying gene expression
 
-are read counts from different methods consistent? do any differences matter? multimapping differences are main source of disagreement in results
-PCA plots for replicates
+FIXME: do we count genes or transcripts? What does this tell us biologically?
+
+are read counts from different algorithms/software consistent? do any differences matter? 
+(multimapping differences are main source of disagreement in results)
+
+IMAGE: PCA plots for replicates
+
+FIXME: main methods of quantifying expression (mostly in humans, but also other biomedically-relevant model systems)
+- htseq-count
+- [cufflinks](http://cole-trapnell-lab.github.io/cufflinks/)
+- RSEM
+- featureCounts
 
 ## Putting it together
 
