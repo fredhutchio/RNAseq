@@ -16,16 +16,36 @@ IMAGE: read mapping
 
 FIXME: how do some of the different read mapping tools differ? are there other tools we should mention?
 - TopHat
+  - [TopHat2: accurate alignment of transcriptomes in the presence of insertions, deletions and gene fusions](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-4-r36)
+  - [Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks](https://www.nature.com/articles/nprot.2012.016)
 - BWA
+  - [Fast and accurate short read alignment with Burrows–Wheeler transform](https://academic.oup.com/bioinformatics/article/25/14/1754/225615?login=true)
 - STAR2
+  - [STAR: ultrafast universal RNA-seq aligner](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905/)
 - Salmon (and other pseudoalignment methods)
+  - [Combine lab - Salmon Overview](https://combine-lab.github.io/salmon/)
+  - [Combine lab Salmon GitHub Repo](https://github.com/COMBINE-lab/salmon)
+- Other pseudoaligners
+  - [Kallisto](https://pachterlab.github.io/kallisto/about)
+
+- Comparing read mapping tools
+  - [Salmon & kallisto: Rapid Transcript Quantification for RNA-Seq Data - NYU Genomics core](https://gencore.bio.nyu.edu/salmon-kallisto-rapid-transcript-quantification-for-rna-seq-data/)
+  - [Benchmarking of RNA-sequencing analysis workflows using whole-transcriptome RT-qPCR expression data](https://www.nature.com/articles/s41598-017-01617-3)
+    - In contrast to the microarray field, where data processing converged over the years into a well-defined set of broadly accepted workflows, the number of RNA-seq data processing workflows is still increasing, with none accepted as the standard so far. RNA-seq data processing workflows typically come in two different flavours.
+    -  there are methods that align reads directly to a reference genome, followed by quantification of mapped reads (e.g. Tophat-Cufflinks5, Tophat-HTSeq6, 7 and STAR-HTSeq7, 8)
+    -  there are the so-called pseudoalignment methods (e.g. Salmon9 and Kallisto10) that break up reads into k-mers before assigning them to transcripts. This results in a substantial gain in speed compared to the alignment based workflows.
+    -  The workflows also differ in how they estimate expression abundance, with some enabling quantification on transcript level (i.e. Cufflinks, Salmon and Kallisto) while others are restricted to gene level quantification
+    -  All workflows show a good concordance with RT-qPCR expression measurements and no workflow outperforms the others. Of note, each workflow revealed a small but specific set of genes with inconsistent expression measurements, reproducibly identified in independent datasets. These genes were typically smaller, had fewer exons and were lower expressed compared to genes with consistent expression measurements. Careful validation is warranted when evaluating RNA-seq based expression profiles for this specific set of genes.
+  -[Gaining comprehensive biological insight into the transcriptome by performing a broad-spectrum RNA-seq analysis](https://www.nature.com/articles/s41467-017-00050-4)
 
 ## Assessing quality of mapped reads
 
 RNAseQC https://software.broadinstitute.org/cancer/cga/rna-seqc
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3356847/
 
 FIXME: what do each of these quality assessments tell us?
 - percent alignment
+  - [From EMBL-EBI online training](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/data-analysis/read-mapping-or-alignment/): The percentage of mapped reads is a global indicator of the overall sequencing accuracy and of the presence of contaminating DNA.
 - paired alignment (vs singletons)
 - strandedness
 - gene body coverage
