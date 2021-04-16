@@ -47,8 +47,8 @@ FIXME: what do each of these quality assessments tell us?
 - percent alignment
   - [From EMBL-EBI online training](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/data-analysis/read-mapping-or-alignment/): The percentage of mapped reads is a global indicator of the overall sequencing accuracy and of the presence of contaminating DNA.
 - paired alignment (vs singletons)
-- strandedness
-- gene body coverage
+- strandedness: to assess the performance of strand-specific library construction methods, the percentage of sense-derived reads is given for each end of the read pair. Whereas a non-strand-specific protocol would give values of 50%/50%, strand-specific protocols typically yield 99%/1% or 1%/99% for this metric.
+- gene body coverage: Calculate the RNA-seq reads coverage over gene body
 - marks PCR duplicates (but this can be misleading because this varies for RNAseq experiments)
 
 ## Reference genomes, assemblies, and annotations
@@ -61,12 +61,13 @@ are read counts from different algorithms/software consistent? do any difference
 (multimapping differences are main source of disagreement in results)
 
 IMAGE: PCA plots for replicates
+  - [The Harvard training](https://hbctraining.github.io/DGE_workshop/lessons/03_DGE_QC_analysis.html) has a series of PCA plots with various different factors colored to show how things cluster
 
 FIXME: main methods of quantifying expression (mostly in humans, but also other biomedically-relevant model systems)
-- htseq-count
+- [htseq-count](https://htseq.readthedocs.io/en/master/)
 - [cufflinks](http://cole-trapnell-lab.github.io/cufflinks/)
 - RSEM
-- featureCounts
+- [featureCounts](https://academic.oup.com/bioinformatics/article/30/7/923/232889)
 
 ## Putting it together
 
