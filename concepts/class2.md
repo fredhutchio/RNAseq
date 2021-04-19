@@ -12,18 +12,26 @@ you should be able to:
 
 ## Methods of mapping reads
 
-IMAGE: read mapping 
+IMAGE: https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/wp-content/uploads/sites/70/2020/05/Figure19.png
 
 FIXME: how do some of the different read mapping tools differ? are there other tools we should mention?
 - TopHat
   - [TopHat2: accurate alignment of transcriptomes in the presence of insertions, deletions and gene fusions](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2013-14-4-r36)
   - [Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks](https://www.nature.com/articles/nprot.2012.016)
+  - [EMBL-EBI bioinformatics training](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/data-analysis/read-mapping-or-alignment/)
+    - TopHat aligns in two steps: 1) unspliced reads are mapped to locate exons (with Bowtie) 2) unmapped reads are then split and aligned independently to identify exon junctions
+
 - BWA
   - [Fast and accurate short read alignment with Burrows–Wheeler transform](https://academic.oup.com/bioinformatics/article/25/14/1754/225615?login=true)
+  - [BWA GitHub](https://github.com/lh3/bwa):BWA is a software package for mapping DNA sequences against a large reference genome, such as the human genome. It consists of three algorithms: BWA-backtrack, BWA-SW and BWA-MEM. The first algorithm is designed for Illumina sequence reads up to 100bp, while the rest two for longer sequences ranged from 70bp to a few megabases. BWA-MEM and BWA-SW share similar features such as the support of long reads and chimeric alignment, but BWA-MEM, which is the latest, is generally recommended as it is faster and more accurate. BWA-MEM also has better performance than BWA-backtrack for 70-100bp Illumina reads
 - STAR2
   - [STAR: ultrafast universal RNA-seq aligner](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905/)
+  - [Mapping RNA-seq Reads with STAR](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631051/):
+    - One of the foundational steps in the RNA-seq data analysis is mapping (alignment) of the large sets of sequenced reads to a reference genome. This task presents more challenges than alignment of genomic DNA reads because RNA sequences are often spliced, i.e. derived from the non-contiguous regions of the genome.
+    - In addition to detecting of annotated and novel splice junctions, STAR is capable of discovering more complex RNA sequence arrangements, such as chimeric and circular RNA. STAR can align spliced sequences of any length with moderate error rates providing scalability for emerging sequencing technologies
 - Salmon (and other pseudoalignment methods)
   - [Combine lab - Salmon Overview](https://combine-lab.github.io/salmon/)
+    - Salmon uses new algorithms (specifically, coupling the concept of quasi-mapping with a two-phase inference procedure) to provide accurate expression estimates very quickly (i.e. wicked-fast) and while using little memory
   - [Combine lab Salmon GitHub Repo](https://github.com/COMBINE-lab/salmon)
 - Other pseudoaligners
   - [Kallisto](https://pachterlab.github.io/kallisto/about)
