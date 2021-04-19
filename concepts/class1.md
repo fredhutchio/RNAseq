@@ -23,17 +23,18 @@ you should be able to:
 
 By the end of this lesson,
 you should be able to:
-- RNAseq workflow
-- experimental design
-- data types and technical limitations of each
-- quality assessment of data
+- outline the main steps in an RNAseq workflow
+- apply best practices in design of RNAseq experiments
+- differentiate types of data obtained via RNAseq, including their technical limitations
+- assess the quality of RNAseq data
 
 ## Overview of RNAseq workflows
 
 IMAGE: diagram of overall process (same as skills course)
 
-- [A very simple overview from the hbc course](https://github.com/hbctraining/Training-modules/blob/master/planning_successful_rnaseq/img/de_workflow2019.png)
-- [Workflow overview from EMBL-EBI Training materials](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/)
+![A very simple overview from the hbc course](https://github.com/hbctraining/Training-modules/blob/master/planning_successful_rnaseq/img/de_workflow2019.png)
+
+![Workflow overview from EMBL-EBI Training materials](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/)
 
 FIXME: applications for RNAseq (DGE)
 
