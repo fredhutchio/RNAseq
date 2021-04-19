@@ -14,14 +14,16 @@ FIXME: links to papers describing algorithms,
 short summary of differences among approaches,
 why prefer one over another?
 
-edgeR
+[edgeR](https://academic.oup.com/bioinformatics/article/26/1/139/182458)
 
 
-limma (voom)
+[limma (voom)](https://academic.oup.com/nar/article/43/7/e47/2414268)
 
 
-DESeq2
+[DESeq2](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8)
 
+What is the difference between the three algorithms?
+- [Biostars Link](https://www.biostars.org/p/284775/)
 
 ## Visualizing differential expression
 
@@ -30,13 +32,15 @@ FIXME/IMAGES for each:
 - how is the plot interpreted?
 - primary manuscripts and example images
 
-MA-plot
+[MA-plot](https://en.wikipedia.org/wiki/MA_plot)
 
-volcano plot
+[volcano plot](https://en.wikipedia.org/wiki/Volcano_plot_(statistics)
+- [Visualization of RNA-Seq results with Volcano Plot](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.html)
 
-heat maps
+[heat maps](https://en.wikipedia.org/wiki/Heat_map#:~:text=A%20heat%20map%20(or%20heatmap,clustered%20or%20varies%20over%20space.)
+- [Visualization of RNA-Seq results with heatmap2](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-heatmap2/tutorial.html)
 
-venn diagrams
+[venn diagrams](https://en.wikipedia.org/wiki/Venn_diagram)
 
 
 ## Putting it together
