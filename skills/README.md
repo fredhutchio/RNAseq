@@ -22,7 +22,7 @@ FIXME: this class doesn't include (developing workflows, Galaxy)
 
 Solutions for exercises can be found in [here](solutions/README.md).
 
-### Prerequisites
+## Prerequisites
 
 ### Unix shell
 
@@ -37,7 +37,7 @@ or [Unix Crash Course](https://fredhutchio.github.io/unix_shell_intro/crash_cour
 - object assignment
 - using functions
 
-### Skills schedule 
+## Skills schedule 
 
 When taught by an instructor,
 each of the four classes is scheduled for two hours.
@@ -50,24 +50,36 @@ The HackMD (interactive page used for sharing links and information) for instruc
 
 Each class in this course includes code-along tutorials interspersed with challenge exercises.
 
-**Required software:**
+## Accessing data and compute environment
 
 Software used in this course include:
-- Unix shell (to access cluster)
-- IGV
-- Text editor
-- R and RStudio and Bioconductor packages (see classes 3 and 4)
+- Unix shell (classes 1 and 2)
+- IGV (class 2)
+- Text editor (classes 1 and 2)
+- R and RStudio and Bioconductor packages (classes 3 and 4)
+
+Class participants are assumed to have access to the Fred Hutch network and ability to run jobs on the on-premise shared compute cluster.
+
+If you do not have access to the Fred Hutch network and cluster,
+and/or would prefer to perform these exercises on your own computer,
+you'll need to download the data files and install additional software
+(see sections below).
+
+### Command-line software
 
 If you would like to run analysis on your own computer
 (instead of on the cluster),
-you will also need:
+you will also need to install the following software:
 - fastqc
 - cutadapt
 - STAR
 - subread
 
+### Data files
 
-The links above reference relevant sections of [fredhutch.io's Software page](http://www.fredhutch.io/software/).
+Source of original data files
+
+Location of processed/intermediate data files
 
 ## For curriculum contributors and instructors
 
