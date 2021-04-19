@@ -117,7 +117,8 @@ For this class:
 > accessing and transferring data stored in Hutch network drive;
 > Mac vs Windows
 
-Locate the project files
+Locate the project files,
+which are stored in a shared folder curated by Shared Resources:
 
 ```bash
 cd /shared/biodata/example_data
@@ -162,6 +163,19 @@ ls -lh rnaseq_class
 > and metadata (information about experimental design used in data analysis)
 > in later classes.
 
+We don't have permission to write files to the shared data folder
+(which wouldn't be a good idea anyway!),
+so we'll each create our own project folder in our home directories to hold the files we'll create in this class:
+
+```bash
+cd ~
+mkdir rnaseq_class
+cd rnaseq_class
+```
+
+> note about [tmux](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) to allow continued work while also running interactive commands,
+> note that it may be useful to use separate `tmux` windows to view shared files (in `biodata` vs working project files (in your `home` directory)
+
 ## Assessing data quality
 
 Run the command `grabnode` and then select the following parameters:
@@ -185,34 +199,47 @@ please see [this section](https://sciwiki.fredhutch.org/compdemos/first_rhino/#l
 of the SciWiki.
 
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-is software that supports quality control (QC) of fastq sequence data,
-such as those 
+is software that supports quality control (QC) of fastq sequence data
 
-running command-line genomics programs
+```bash
+fastqc XXX -o XXX
+```
 
-> note about [tmux](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) to allow continued work while also running interactive commands
+running command-line genomics programs,
+determine what works on compressed files,
+using arguments, 
+standard io, etc
 
-
+assessing output
+- viewing files created
+- interpreting files
 
 ## Trimming and filtering data
 
-The approach we'll be using in our main workflow performs quality assessment of data as we map the reads,
+[Cutadapt](https://cutadapt.readthedocs.io/en/stable/) is a software that allows trimming, filtering, and demultiplexing of reads.
+Since we're using data that have already been published, 
+the samples have already been demultiplexed and adapters trimmed.
+The approach we'll be using in our main workflow also performs quality assessment of data as we map the reads,
 which prevents any low-quality data from being included in subsequent analysis.
-Depending on the nature of your data 
-(e.g., model system) 
-and experimental design,
-you may instead choose to filter and trim your data based on quality scores (and perhaps other parameters).
+Thus, this analysis step (trimming and filtering raw data)
+is not necessary. 
+However, depending on the nature of your data 
+(e.g., model system) and experimental design,
+you may need to perform trimming, filtering, and perhaps other modifications.
 
-trimming and quality filtering
+only for de novo assembly, or other special cases
 
-filtering (cutadapt)
+We'll provide a cursory overview of how this step works using the example of applying a quality filter to the data:
 
 ```bash
 ml cutadapt
+# https://cutadapt.readthedocs.io/en/stable/guide.html#standard-input-and-output
 ```
 
+> standard in and out, from [cutadapt](https://cutadapt.readthedocs.io/en/stable/guide.html#standard-input-and-output),
+> including managing logs
 
-only for de novo assembly, or other special cases
+See manual for instructions to trim adapters and perform other manipulations using Cutadapt.
 
 follow-up QC (multiQC)
 
