@@ -8,6 +8,37 @@ you should be able to:
 - Analysis tools: EdgeR, limma voom, DESeq
 - visualizing results (MA-plot, volcano plot, heat map)
 
+## Assessing differential expression
+
+FIXME: links to papers describing algorithms,
+short summary of differences among approaches,
+why prefer one over another?
+
+edgeR
+
+
+limma (voom)
+
+
+DESeq2
+
+
+## Visualizing differential expression
+
+FIXME/IMAGES for each:
+- what does plot show?
+- how is the plot interpreted?
+- primary manuscripts and example images
+
+MA-plot
+
+volcano plot
+
+heat maps
+
+venn diagrams
+
+
 ## Putting it together
 
 EXERCISE: choosing setup for hypothesis testing (distractors are other metadata)
