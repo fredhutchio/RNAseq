@@ -34,10 +34,10 @@ FIXME/IMAGES for each:
 
 [MA-plot](https://en.wikipedia.org/wiki/MA_plot)
 
-[volcano plot](https://en.wikipedia.org/wiki/Volcano_plot_(statistics)
+[volcano plot](https://en.wikipedia.org/wiki/Volcano_plot_(statistics))
 - [Visualization of RNA-Seq results with Volcano Plot](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.html)
 
-[heat maps](https://en.wikipedia.org/wiki/Heat_map#:~:text=A%20heat%20map%20(or%20heatmap,clustered%20or%20varies%20over%20space.)
+[heat maps](https://en.wikipedia.org/wiki/Heat_map)
 - [Visualization of RNA-Seq results with heatmap2](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-heatmap2/tutorial.html)
 
 [venn diagrams](https://en.wikipedia.org/wiki/Venn_diagram)
