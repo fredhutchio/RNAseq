@@ -33,8 +33,10 @@ FIXME: how do some of the different read mapping tools differ? are there other t
   - [Combine lab - Salmon Overview](https://combine-lab.github.io/salmon/)
     - Salmon uses new algorithms (specifically, coupling the concept of quasi-mapping with a two-phase inference procedure) to provide accurate expression estimates very quickly (i.e. wicked-fast) and while using little memory
   - [Combine lab Salmon GitHub Repo](https://github.com/COMBINE-lab/salmon)
+    - Salmon achieves its accuracy and speed via a number of different innovations, including the use of selective-alignment (accurate but fast-to-compute proxies for traditional read alignments), and massively-parallel stochastic collapsed variational inference
 - Other pseudoaligners
   - [Kallisto](https://pachterlab.github.io/kallisto/about)
+    - program for quantifying abundances of transcripts from bulk and single-cell RNA-Seq data, or more generally of target sequences using high-throughput sequencing reads
 
 - Comparing read mapping tools
   - [Salmon & kallisto: Rapid Transcript Quantification for RNA-Seq Data - NYU Genomics core](https://gencore.bio.nyu.edu/salmon-kallisto-rapid-transcript-quantification-for-rna-seq-data/)
@@ -54,7 +56,7 @@ RNAseQC https://software.broadinstitute.org/cancer/cga/rna-seqc
 FIXME: what do each of these quality assessments tell us?
 - percent alignment
   - [From EMBL-EBI online training](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/data-analysis/read-mapping-or-alignment/): The percentage of mapped reads is a global indicator of the overall sequencing accuracy and of the presence of contaminating DNA.
-- paired alignment (vs singletons)
+- paired alignment (vs singletons): For paired alignment we expect both strands to align to the genome. R1 is the forward direction and R2 is the reverse direction. Sometimes only one of the pairs will align. We call the result a singleton. (sourced from various biostar threads)
 - strandedness: to assess the performance of strand-specific library construction methods, the percentage of sense-derived reads is given for each end of the read pair. Whereas a non-strand-specific protocol would give values of 50%/50%, strand-specific protocols typically yield 99%/1% or 1%/99% for this metric.
 - gene body coverage: Calculate the RNA-seq reads coverage over gene body
 - marks PCR duplicates (but this can be misleading because this varies for RNAseq experiments)
@@ -64,6 +66,10 @@ FIXME: what do each of these quality assessments tell us?
 ## Quantifying gene expression
 
 FIXME: do we count genes or transcripts? What does this tell us biologically?
+- A gene is a fuzzy, partially defined concept of a sequence of nucleotides that encode RNA or protein
+- Transcripts are specific nucelotide sequences that encode RNA/protein
+  - Each transcript maps to a gene, genes often have multiple transcipts due to alternative splicing
+- Usually genes are counted (does not take multiple isoforms into account) because this is easier and more straight-forward 
 
 are read counts from different algorithms/software consistent? do any differences matter? 
 (multimapping differences are main source of disagreement in results)
