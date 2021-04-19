@@ -36,6 +36,8 @@ By the end of this class, you should be able to:
 
 ## About the data
 
+The data and associated research questions motivate all subsequent decisions in the analysis.
+
 Human and mouse data from ENCODE project
 
 FIXME diagram of study design
@@ -58,27 +60,40 @@ whole genome, complete count matrix for multiple samples; result is DGE across m
 Section 4 onwards 
 https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html
 
-## Getting set up 
+## Getting set up
 
-Logging on to `rhino`
-https://sciwiki.fredhutch.org/compdemos/first_rhino/
+For this class,
+we'll be executing steps in an RNAseq workflow using command-line software on the Fred Hutch on-premise shared compute cluster maintained by Scientific Computing.
 
-running interactive jobs with grabnode (https://sciwiki.fredhutch.org/compdemos/first_rhino/#logging-on-to-gizmo-via-grabnode)
+You can access the cluster by logging on to `rhino` using the instructions [here](https://sciwiki.fredhutch.org/compdemos/first_rhino/).
+We recommend connecting to VPN and then using `ssh username@rhino@fhcrc.org` in your shell to access the cluster.
 
-- loading modules (https://sciwiki.fredhutch.org/compdemos/first_rhino/#loading-software)
+Why are we using the cluster?
+- access to software and example data files
+- may not be possible to install/run these programs on your own computer
+- consistent among everyone in the class (reproducible!)
 
-tar and gzip (and corresponding unix commands)
+> Galaxy is another option for running genomics software,
+> though it has its own limitations.
+> Learn more about accessing Galaxy [here](https://sciwiki.fredhutch.org/compdemos/galaxy-on-prem/).
 
-Connections to reproducibility
-- record keeping
-- helps you in the future
-- can potentially help other people as well
+This class is designed to walk you through the steps of an RNAseq analysis,
+which involves running each program individually.
+While this is effective for learning how software works and confirming initial results are as expected,
+it isn't especially efficient for processing large numbers of files.
+We'll periodically identify methods and tools that represent how these tasks operate at scale (across an entire experiment),
+with an emphasis on reproducibility of your computational methods.
+As you think about the way you're conducting your analyses,
+consider the following goals for reproducibility:
+- record keeping for reporting methods in a manuscript
+- helps you rework analysis (in the future, for more samples, or to change methods)
+- allows other people (in your lab, manuscript reviewers, other scientists) to recreate your results
 
 ## Project organization
 
 Overview of workflow
 
-FIXME diagram of workflow
+FIXME diagram of workflow (from concepts)
 
 Questions to ask at each step of the analysis:
 - Are data organized and formatted appropriately?
@@ -87,9 +102,7 @@ Questions to ask at each step of the analysis:
 
 Project-based file management
 
-How genomics projects differ, with data stored separately
-
-Setting up directory structure
+Types of files
 - data and metadata
 - intermediate results
 - final output
@@ -97,13 +110,31 @@ Setting up directory structure
 
 Writing a README
 
+How genomics projects differ, with data stored separately
+
 connections with Hutch infrastructure
 - network drives
 - accessing and transferring Unix-stored data from Mac vs Windows
 
+Data supplied by Genomics and Bioinformatics Cores:
+- FIXME
+
+File organization for this class:
+- FIXME
+
+> We'll discuss reference data (e.g., gene sequences and annotations)
+> and metadata (information about experimental design used in data analysis)
+> in later classes.
+
 ## Trimming and filtering data
 
+running interactive jobs with grabnode (https://sciwiki.fredhutch.org/compdemos/first_rhino/#logging-on-to-gizmo-via-grabnode)
+
+- loading modules (https://sciwiki.fredhutch.org/compdemos/first_rhino/#loading-software)
+
 running command-line genomics programs
+
+> note about tmux to allow continued work while also running interactive commands
 
 initial QC (fastqc)
 
@@ -125,15 +156,10 @@ accessing work again
 
 review objectives
 
-preview next class's objectives
+preview objectives for next class
 
 Reference materials:
 https://datacarpentry.org/organization-genomics/
 
 ## On your own
 
-## Wrapping up
-
-**Further reading:**
-- Intro to Unix
-- HPC: On-premise
