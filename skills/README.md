@@ -70,10 +70,10 @@ you'll need to download the data files and install additional software
 If you would like to run analysis on your own computer
 (instead of on the cluster),
 you will also need to install the following software:
-- fastqc
-- cutadapt
-- STAR
-- subread
+- [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+- [cutadapt](https://cutadapt.readthedocs.io/en/stable/)
+- [STAR](https://github.com/alexdobin/STAR)
+- [subread](http://subread.sourceforge.net)
 
 ### Data files
 
