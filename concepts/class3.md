@@ -46,10 +46,18 @@ Most info for MA and volcano plots sourced from [this paper](https://www.ncbi.nl
 - generally include some threshold indicators for adjusted P-values to indicate which genes would be considered statistically differentially expressed based on the adjusted P-value of their difference between treatments
 
 [heat maps](https://en.wikipedia.org/wiki/Heat_map)
-- 
+- [From online EMBL-EBI Training (Contains example image)](https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/)
+  - In heat maps the data is displayed in a grid where each row represents a gene and each column represents a sample. The colour and intensity of the boxes is used to represent changes (not absolute values) of gene expression. In the example below, red represents up-regulated genes and blue represents down-regulated genes. Black represents unchanged expression.
 
 [venn diagrams](https://en.wikipedia.org/wiki/Venn_diagram)
+- A Venn diagram consists of multiple overlapping closed curves, usually circles, each representing a set. 
+- overlap represents what sets have in commmon
 
+Example papers:
+- [The microglial sensome revealed by direct RNA sequencing](https://www.nature.com/articles/nn.3554) - venn diagram, heat maps
+- [Th2 responses are primed by skin dendritic cells with distinct transcriptional profiles](https://pubmed.ncbi.nlm.nih.gov/27913566/) - venn diagram, heat maps, volcano plot, PCA
+- [Dissecting the phenotypic and functional heterogeneity of mouse inflammatory osteoclasts by the expression of Cx3cr1](https://elifesciences.org/articles/54493) - heat maps, volcano plots, venn diagram
+- [Comprehensive comparative analysis of strand-specific RNA sequencing methods](https://www.nature.com/articles/nmeth.1491) - MA plot
 
 ## Putting it together
 
