@@ -19,14 +19,14 @@ This course introduces you the following steps in performing RNAseq analysis:
 - differential gene analysis and visualization
 
 This course assumes a general knowledge of both the Unix shell and R statistical programming.
-See [Prerequisites](../README#prerequisites) for more information about what concepts and skills should be familiar to you before this course.
+See [Prerequisites](README#prerequisites) for more information about what concepts and skills should be familiar to you before this course.
 
 For more information about RNAseq and genomics work, 
 please see the resources for [RNA approaches](https://sciwiki.fredhutch.org/generation/datagen_rnaApproaches) 
 in the Fred Hutch Biomedical Data Science Wiki.
 
 Before proceeding with these training materials,
-please ensure you have installed XXX as described [here](http://www.fredhutch.io/software/).
+please ensure you have installed required software as described [here](README.md/#accessing-data-and-compute-environment).
 
 By the end of this class, you should be able to:
 - Organize files (data, code, results) associated with genomics projects

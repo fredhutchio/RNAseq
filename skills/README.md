@@ -37,11 +37,10 @@ or [Unix Crash Course](https://fredhutchio.github.io/unix_shell_intro/crash_cour
 - object assignment
 - using functions
 
-## Skills schedule 
+## Schedule 
 
 When taught by an instructor,
 each of the four classes is scheduled for two hours.
-The HackMD (interactive page used for sharing links and information) for instructor-led courses is [here](FIXME).
 
 1. Introduction to RNAseq data
 2. Read mapping and quantification

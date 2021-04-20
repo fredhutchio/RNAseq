@@ -33,5 +33,7 @@ Please see the following resources for more information on:
 including learner profiles that describe the intended audience for these materials.
 [`hackmdio.md`](hackio.md) is an archive of the [interactive webpage](https://hackmd.io) used during lessons.
 - [**Contributing**](https://github.com/fredhutchio/curriculum_contribution) to lessons.
-Each lesson's materials are described in markdown (`.md`) files
-in the [GitHub repository](https://github.com/fredhutchio/rnaseq).
+  - There are separate folders containing teaching materials for the concept and skills course in the [GitHub repository](https://github.com/fredhutchio/rnaseq).
+  - [Concepts](https://github.com/fredhutchio/rnaseq/concepts)
+  - [Skills](https://github.com/fredhutchio/rnaseq/skills): Each lesson’s materials are described in R markdown (`.Rmd`) and markdown (`.md`) files.
+  The former should be edited to make changes to the material and then knit to create the latter, which are then rendered in GitHub.
