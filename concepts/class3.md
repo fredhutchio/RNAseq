@@ -23,8 +23,16 @@ why prefer one over another?
 [DESeq2](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8)
 
 What is the difference between the three algorithms?
+
 - [Biostars Link](https://www.biostars.org/p/284775/)
-  - 
+  - Both EdgeR/DESeq2 work on the assumption that no DE genes are being expressed
+  - DESeq2 uses geometric normalization
+  - EdgeR uses a weighted mean of log ratios-based method
+  - Limma normalizes using quantile normalization
+- [RNA-Seq differential expression analysis: An extended review and a software tool](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5739479/)
+  - EdgeR: A Poisson super dispersion model is used to account for technical and biological variation. Apply the Bayesian empirical method to moderate the degree of over dispersion against transcripts.
+  - Limma: Based on the linear model and originally developed to analyze data from microarray and currently extended for RNA-Seq analysis. The limma user guide recommends the use of the TMM normalization of the edgeR package associated with the use of the voom conversion, which essentially transforms the normalized counts to logarithms base 2 and estimates the mean-variance relation to determine the weight of each observation made initially by a linear model
+  - DESeq2: DESeq2 firstly build a model with observed counts. Secondly, it fits using the same method from the original DESeq, or fit in two steps: find the value of the parameter that makes the likelihood largest, which is called maximum likelihood estimation. Then, it takes all the gene values and move these values towards a average value. DESeq2 uses Bayes theorem to guides the amount of movement for each gene: if the information for the gene is low, its value is moved close to the average, if the information for the gene is high, its value is moved very little. Thus, the moved values are useful to evaluate different sets of genes as well as to apply a threshold
 
 ## Visualizing differential expression
 
