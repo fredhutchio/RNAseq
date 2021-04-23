@@ -16,3 +16,11 @@ By the end of this class, you should be able to:
 - MA-plot, volcano plot, heat map
 - reproducibility?
 - creating reproducible report with R markdown (supplemental?)
+
+## MA-plot
+
+
+## Volcano plot
+
+
+## Heat maps

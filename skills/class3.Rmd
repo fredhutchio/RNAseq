@@ -11,6 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Objectives
 
+In our previous class,
+we discussed 
+XXX
+
 By the end of this class, you should be able to:
 - Install, load, and operate R packages from Bioconductor
 - Use EdgeR to assess differential gene expression (DGE)
@@ -39,8 +43,17 @@ metadata: csv file including sample name (fastq file usually), group information
 > - Have the data been transformed and/or normalized?
 > - How were annotations applied? Are there duplicate gene names?
 
+## Identifying differentially expressed genes
+
+edgeR workflow
+
+## Testing hypotheses
+
+edgeR testing
+
 ## Wrapping up
 
-**Further reading:**
+## On your own
+
 - Intro to Bioconductor
 - R scripts vs notebooks/Rmd

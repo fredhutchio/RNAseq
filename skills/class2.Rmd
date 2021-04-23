@@ -11,16 +11,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Objectives
 
-Welcome to XXX from fredhutch.io!
-This course introduces you XXX:
-XXX. 
-
-For more information about RNAseq and XXX, 
-please see the [software](https://sciwiki.fredhutch.org/XXX) 
-entry for the Fred Hutch Biomedical Data Science Wiki.
-
-Before proceeding with these training materials,
-please ensure you have installed XXX as described [here](http://www.fredhutch.io/software/).
+In our previous class,
+we discussed 
+XXX
 
 By the end of this class, you should be able to:
 - Use command-line bioinformatics software to map genomic reads to a reference genome
@@ -48,7 +41,10 @@ connections to reference data (older index data aren't compatible with some newe
 RNAseQC https://software.broadinstitute.org/cancer/cga/rna-seqc
 
 lighterweight tool? can choose which assessments to run
-IGV
+
+visualizing mapping via IGV
+
+IMAGE: example from IGV
 
 ## Quantifying genes
 
@@ -62,7 +58,9 @@ featureCounts from [Subread](http://subread.sourceforge.net)
 This section isn't required for this course,
 but is useful to understand how analyses are scaled up for multiple samples.
 
-Key points in reproducibility: link to ten simple rules article? distill points to those specific for genomics?
+Key points in reproducibility: 
+- link to ten simple rules article? 
+- distill points to those specific for genomics?
 
 retaining commands run in scripts,
 share [example shell script](https://github.com/fredhutchio/rnaseq/blob/gh-pages/skills/scripts/rnaseq.sh)
