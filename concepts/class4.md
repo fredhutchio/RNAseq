@@ -47,6 +47,11 @@ FIXME/IMAGE(?): definition, example paper, etc for each of following (could dupl
     - The transcription of lincRNAs can regulate gene neighbourhoods independently of the lincRNA transcripts themselves, suggesting the involvement of enhancer-like activity.
 - SNVs
 - RNA editing
+  - [The many roles of an RNA editor](https://www.nature.com/articles/35098584):
+    - RNA editing describes the changes that take place in the RNA sequence after transcription is completed. Examples include modification of cytosine to uracil or of adenine to isoleucine by deamination, or insertion and/or deletion of particular bases.
+    - RNA editing is of two types: it either involves the insertion/deletion of nucleotides or their modification. The latter is the most widespread type of RNA editing, and is found both in plant organelles and in the nucleus of higher eukaryotes.
+    - This review concentrates on the best-characterized types of RNA editing that are found in mammals, the conversion of cytosine (C) to uracil (U) and the conversion of adenosine (A) to inosine (I).
+    - Includes schematics
 - dealing with multiple species (xenografts, viruses)
 
 ## RNAseq beyond differential gene expression
