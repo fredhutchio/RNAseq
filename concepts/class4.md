@@ -46,6 +46,8 @@ FIXME/IMAGE(?): definition, example paper, etc for each of following (could dupl
     - The small number of lincRNAs that have been functionally characterized have diverse roles, including enforcing stable and repressive chromatin states that increase or suppress transcriptional activation, orchestrating higher-order nuclear architecture, and acting as protein and RNA scaffolds and decoys
     - The transcription of lincRNAs can regulate gene neighbourhoods independently of the lincRNA transcripts themselves, suggesting the involvement of enhancer-like activity.
 - SNVs
+  - [SNV identification from single-cell RNA sequencing data](https://pubmed.ncbi.nlm.nih.gov/31504520/)
+  - [Systematic comparative analysis of single-nucleotide variant detection methods from single-cell RNA sequencing data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1863-4)
 - RNA editing
   - [The many roles of an RNA editor](https://www.nature.com/articles/35098584):
     - RNA editing describes the changes that take place in the RNA sequence after transcription is completed. Examples include modification of cytosine to uracil or of adenine to isoleucine by deamination, or insertion and/or deletion of particular bases.
@@ -59,9 +61,18 @@ FIXME/IMAGE(?): definition, example paper, etc for each of following (could dupl
 FIXME/IMAGE(?): definition, example paper, etc for each of following (could duplicate content in SciWiki resource library)
 
 - scRNAseq
+  - [An Introduction to the Analysis of Single-Cell RNA-Sequencing Data](https://www.cell.com/molecular-therapy-family/methods/pdf/S2329-0501(18)30066-4.pdf)
+    - High-throughput sequencing along with high-yield cell separation methods have paved the way to modern single-cell sequencing platforms such as Fluidigm C1, DropSeq, Chromium 10X, SCI-Seq, and many others
+    - All rely on labeling mRNA molecules with DNA barcodes during reverse transcription and/or subsequent steps, which allows indexing of the transcripts back to their individual cells of origin. Although each method is unique in the way it separates cells and labels the mRNA molecules, they all rely on similar computational pipelines for the representation of the transcriptional profiles
+    - these technologies can effectively isolate the signal from rare cell populations, which would be hidden in output from bulk cell population RNA sequencing.5–8 Moreover, the technology can be used to infer potentially useful markers, such as cell surface proteins, for cell types with no known markers. Because single-cell sequencing analysis is driven by clustering of cells based on their differentially expressed genes, the genes that drive the clustering can be examined as possible unique markers for the cell population of interest. Lastly, single-cell sequencing can be employed in studies of cell lineage and the regulation of differentiation. For example, a population of stem cells can be induced to differentiate, and single-cell sequencing performed at series of time points can provide “snapshots” of the progression of differentiation.
 - small RNAseq
+  - [RNA sequencing: advances, challenges and opportunities](https://www.nature.com/articles/nrg2934)
+  - [Experimental design, preprocessing, normalization and differential expression analysis of small RNA sequencing experiments](https://silencejournal.biomedcentral.com/articles/10.1186/1758-907X-2-2)
 - ribo-seq
+  - [Ribosome Footprint Profiling of Translation throughout the Genome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4917602/)
+  - [Genome-Wide Analysis in Vivo of Translation with Nucleotide Resolution Using Ribosome Profiling](https://science.sciencemag.org/content/324/5924/218)
 - nascent RNAseq
+  - [Nascent RNA Analyses: Tracking Transcription and Its Regulation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858503/)
 
 ## Putting it together
 
@@ -74,4 +85,3 @@ EXERCISE: want to ask a follow up question, what type of data are appropriate?
 review objectives
 
 ## Errata
-
