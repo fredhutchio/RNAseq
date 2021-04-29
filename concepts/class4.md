@@ -20,11 +20,26 @@ Connecting pathways/networks of genes, or categorizing the roles genes play: fun
 FIXME/IMAGE(?): for each of the following tools, provide a link and information identifying its approach to functional annotations
 
 - [GSEA](https://www.gsea-msigdb.org/gsea/index.jsp)
+  - [Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles](https://www.pnas.org/content/102/43/15545):
+    - The method derives its power by focusing on gene sets, that is, groups of genes that share common biological function, chromosomal location, or regulation
+    - Given an a priori defined set of genes S (e.g., genes encoding products in a metabolic pathway, located in the same cytogenetic band, or sharing the same GO category), the goal of GSEA is to determine whether the members of S are randomly distributed throughout L or primarily found at the top or bottom. We expect that sets related to the phenotypic distinction will tend to show the latter distribution.
 - [GOseq](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-2-r14)
+  -  analysis is widely used to reduce complexity and highlight biological processes in genome-wide expression studies, but standard methods give biased results on RNA-seq data due to over-detection of differential expression for long and highly expressed transcripts. Application of GOseq to a prostate cancer data set shows that GOseq dramatically changes the results, highlighting categories more consistent with the known biology.
+  -  In order to correct for selection bias in category testing, we propose the following three-step methodology. First, the genes that are significantly DE between conditions are identified. The GOseq method works with any procedure for identifying DE genes. Second, the likelihood of DE as a function of transcript length is quantified. This is obtained by fitting a monotonic function to DE versus transcript length data. Finally, the DE versus length function is incorporated into the statistical test of each category's significance. This final step takes into account the lengths of the genes that make up each category.
 - [GOrilla](http://cbl-gorilla.cs.technion.ac.il/)
-- [topGO](https://bioconductor.org/packages/release/bioc/html/topGO.html)
+  - [GOrilla: a tool for discovery and visualization of enriched GO terms in ranked gene lists](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-48)
+    - GOrilla is a web-based application that identifies enriched GO terms in ranked lists of genes, without requiring the user to provide explicit target and background sets. This is particularly useful in many typical cases where genomic data may be naturally represented as a ranked list of genes (e.g. by level of expression or of differential expression).
+    - The application has two modes of operation: (1) Discovery of enriched GO terms at the top of a ranked list of genes using the mHG statistics (as explained in this paper); (2) Discovery of enriched GO terms in a target set versus a background set and using a hypergeometric model (as commonly done in other applications). In this case the ranking inside these lists is ignored.
+- [topGO](https://bioconductor.statistik.tu-dortmund.de/packages/3.3/bioc/vignettes/topGO/inst/doc/topGO.pdf)
+  - The topGO package is designed to facilitate semi-automated enrichment analysis for Gene Ontology (GO) terms. The process consists of input of normalised gene expression measurements, gene-wise correlation or differential expression analysis, enrichment analysis of GO terms, interpretation and visualisation of the results.
+  - One of the main advantages of topGO is the unified gene set testing framework it offers. Besides providing an easy to use set of functions for performing GO enrichment analysis, it also enables the user to easily implement new statistical tests or new algorithms that deal with the GO graph structure. This unified framework also facilitates the comparison between different GO enrichment methodologies.
 - [amiGO](http://amigo.geneontology.org/amigo)
+  - [AmiGO: online access to ontology and annotation data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2639003/)
+    - To give broad access to this resource, the GO Consortium has developed AmiGO, a web-based application that allows users to search, sort, analyze, visualize and download data of interest. Along with providing details of the ontologies, gene products and annotations, AmiGO features a BLAST (Altschul et al., 1990) search, Term Enrichment and GO Slimmer tools, the GO Online SQL Environment and a user help guide
 - [clusterProfiler](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3339379/)
+  - Here, we present an R package, clusterProfiler that automates the process of biological-term classification and the enrichment analysis of gene clusters
+  - The clusterProfiler package depends on the Bioconductor annotation data GO.db and KEGG.db to obtain the maps of the entire GO and KEGG corpus
+  - The clusterProfiler package offers a gene classification method, namely groupGO, to classify genes based on their projection at a specific level of the GO corpus, and provides functions, enrichGO and enrichKEGG, to calculate enrichment test for GO terms and KEGG pathways based on hypergeometric distribution. To prevent high false discovery rate (FDR) in multiple testing, q-values (Storey, 2002) are also estimated for FDR control. Furthermore, clusterProfiler supplies a function, compareCluster, to automatically calculate enriched functional categories of each gene clusters and provides several methods for visualization.
 
 ## Other considerations for RNAseq data
 
@@ -46,8 +61,8 @@ FIXME/IMAGE(?): definition, example paper, etc for each of following (could dupl
     - The small number of lincRNAs that have been functionally characterized have diverse roles, including enforcing stable and repressive chromatin states that increase or suppress transcriptional activation, orchestrating higher-order nuclear architecture, and acting as protein and RNA scaffolds and decoys
     - The transcription of lincRNAs can regulate gene neighbourhoods independently of the lincRNA transcripts themselves, suggesting the involvement of enhancer-like activity.
 - SNVs
-  - [SNV identification from single-cell RNA sequencing data](https://pubmed.ncbi.nlm.nih.gov/31504520/)
   - [Systematic comparative analysis of single-nucleotide variant detection methods from single-cell RNA sequencing data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1863-4)
+    - Next generation sequencing is by far the most useful technology to detect mutations for its ability to screen SNVs in a high-throughput manner. SNVs could be detected from the whole genome sequencing (WGS) or whole exome sequencing (WES), and then be utilized to infer clonal architecture or to construct the evolutionary relationships of tumors
 - RNA editing
   - [The many roles of an RNA editor](https://www.nature.com/articles/35098584):
     - RNA editing describes the changes that take place in the RNA sequence after transcription is completed. Examples include modification of cytosine to uracil or of adenine to isoleucine by deamination, or insertion and/or deletion of particular bases.
@@ -68,11 +83,19 @@ FIXME/IMAGE(?): definition, example paper, etc for each of following (could dupl
 - small RNAseq
   - [RNA sequencing: advances, challenges and opportunities](https://www.nature.com/articles/nrg2934)
   - [Experimental design, preprocessing, normalization and differential expression analysis of small RNA sequencing experiments](https://silencejournal.biomedcentral.com/articles/10.1186/1758-907X-2-2)
+    - Prior to the advent of new, deep sequencing methods, small RNA (sRNA) discovery was dependent on Sanger sequencing, which was time-consuming and limited knowledge to only the most abundant sRNA. The innovation of large-scale, next-generation sequencing has exponentially increased knowledge of the biology, diversity and abundance of sRNA populations.
+    - There are several biologically relevant and functionally diverse classes of sRNA of specific sizes and produced by different, genetically separable pathways. These include miRNA, small interfering RNA (siRNA) and the animal-specific Piwi-interacting RNA (piRNA, originally called repeat-associated siRNA or rasiRNA)
+    - All of these kinds of sRNA can be identified by generating sRNA sequencing libraries from size-selected populations of RNA that are approximately 18 to 30 nt long. Along with these biologically relevant sRNA, RNA degradation products, including fragments of transfer RNA (tRNA) and ribosomal RNA (rRNA), are also sequenced
 - ribo-seq
   - [Ribosome Footprint Profiling of Translation throughout the Genome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4917602/)
+    - Ribosome profiling has emerged as a technique for measuring translation comprehensively and quantitatively by deep sequencing of ribosome-protected mRNA fragments
+    - By identifying the precise positions of ribosomes, footprinting experiments have unveiled key insights into the composition and regulation of the expressed proteome, including delineating potentially functional micropeptides, revealing pervasive translation on cytosolic RNAs, and identifying differences in elongation rates driven by codon usage or other factors
+    - Includes images/figures
   - [Genome-Wide Analysis in Vivo of Translation with Nucleotide Resolution Using Ribosome Profiling](https://science.sciencemag.org/content/324/5924/218)
 - nascent RNAseq
   - [Nascent RNA Analyses: Tracking Transcription and Its Regulation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6858503/)
+    - Transcription and its control can be tracked indirectly by measuring stable RNAs, or directly by measuring nascent RNAs. The latter reveals the immediate regulatory changes in response to developmental, environmental, disease, and metabolic signals
+    - Includes figures
 
 ## Putting it together
 
